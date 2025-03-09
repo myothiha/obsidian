@@ -1,5 +1,4 @@
-#Attention_Pooling
-#Transformer
+#Attention_Pooling #Transformer
 
 
 ### Saving memory by removing [class] token
