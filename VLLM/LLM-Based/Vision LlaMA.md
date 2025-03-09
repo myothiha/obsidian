@@ -31,6 +31,20 @@ Evaluate Performance across different tasks.
 ### Supervise Training
 
 - Dataset: All model only trained on **ImageNet-1K**. without other datasets or distillation.
-- Compare with DeiT3.
+- Plain Transformer
+	- Compare with DeiT3.
 	- Use **class token** instead of [[GAP]] (Global Average Pooling)
-	- 
+- Pyramid Vision Transformer
+	- use same architecture as [[Twins-SVT]]
+	- same hyper parameters setting.
+	- Modifications:
+		- Remove the conditional position encoding.
+
+Self-Supervised Training
+- Dataset: ImageNET-1k
+- Exclude all components that use [[CLIP]] and DALLE or distillation.
+- Use masked auto encoders [[MAE]] pretrained from https://github.com/open-mmlab/mmpretrain/tree/main/configs/mae
+	- Modifications:
+	- Replace the encoder with VisionLLaMA 
+	- use same hyperparameters as [[MAE]]
+- 
