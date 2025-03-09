@@ -3,7 +3,7 @@
 
 # Important Components
 - Plain Transformer ViT from [[ViT for Image Recognition as Scale]]
-- Pyramid Transformer
+- Pyramid Transformer from [[Twins-SVT]]
 - Rotary Positional embeddings RoPE 
 
 # Tasks
@@ -16,6 +16,7 @@ Evaluate Performance across different tasks.
 
 ## 1. Image Generation
 
+### Architecture
 - Replace vision transformer part of [[Diffusion Transformers (DiTs)]] with VisionLlaMA
 - The rest of the training are the same.
 	- Dataset: ImageNet
@@ -40,11 +41,35 @@ Evaluate Performance across different tasks.
 	- Modifications:
 		- Remove the conditional position encoding.
 
-Self-Supervised Training
+### Self-Supervised Training
 - Dataset: ImageNET-1k
 - Exclude all components that use [[CLIP]] and DALLE or distillation.
 - Use masked auto encoders [[MAE]] pretrained from https://github.com/open-mmlab/mmpretrain/tree/main/configs/mae
 	- Modifications:
 	- Replace the encoder with VisionLLaMA 
 	- use same hyperparameters as [[MAE]]
-- 
+	- use 0.75 % mask
+### Full Fine-tuning
+
+- Dataset Imagenet
+- Initialize the model with **pertained weight from Supervised Training** 
+- Fine-tuned on the Dataset with totally trainable parameters.
+
+Linear Probing
+- Init the model with **pre-trained weights from Self-Supervised Training**.
+- Froze the backbone and only fine-tuned the head.
+
+
+### Results
+![[Screenshot 2025-03-09 at 5.11.53 PM.png]]
+
+## 3. Segmentation
+
+### Dataset
+- Evaluation on ADE20K
+- ImageNet-1k (for Pre-trained baselines)
+
+### Archtiecture
+- [[UperNet]] framework, replace backbone with **pyramid VisionLLaMA.**
+
+![[Screenshot 2025-03-09 at 5.16.31 PM.png]]
