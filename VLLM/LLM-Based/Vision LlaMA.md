@@ -70,6 +70,9 @@ Linear Probing
 - ImageNet-1k (for Pre-trained baselines)
 
 ### Archtiecture
-- [[UperNet]] framework, replace backbone with **pyramid VisionLLaMA.**
+- use [[UperNet]] framework.
+- Supervised: replace ViT backbone with **pyramid VisionLLaMA.**
+- Self Supervised: replace ViT backbone with **VisionLLaMA**.
+- 
 
 ![[Screenshot 2025-03-09 at 5.16.31 PM.png]]
