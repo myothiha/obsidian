@@ -79,8 +79,15 @@ Linear Probing
 
 ## 3. Object Detection on COCO
 
-
 ### Architecture
 
-- use Mask RCNN and replace backbone with **pyramid VisionLLaMA.**
+#### Supervised Training
+- use [[Mask RCNN]] and replace backbone with **pyramid VisionLLaMA.**
+
+![[Screenshot 2025-03-09 at 9.55.56 PM.png]]
+
+#### Unsupervised Traininig
+- Replace ViT backbone of [[ViTDet]] 
+
+![[Screenshot 2025-03-09 at 10.03.37 PM.png]]
 
