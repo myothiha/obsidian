@@ -18,4 +18,4 @@
 
 
 **References**:
-Xiao, T., Liu, Y., Zhou, B., Jiang, Y., Sun, J.: Unified perceptual parsing for scene understanding. In: Proc. Eur. Conf. Comp. Vis. (2018) 
+Xiao, T., Liu, Y., Zhou, B., Jiang, Y., Sun, J.: Unified perceptual parsing for scene understanding. In: Proc. Eur. Conf. Comp. Vis. (2018) https://arxiv.org/abs/1807.10221

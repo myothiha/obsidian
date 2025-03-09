@@ -76,3 +76,11 @@ Linear Probing
 - 
 
 ![[Screenshot 2025-03-09 at 5.16.31 PM.png]]
+
+## 3. Object Detection on COCO
+
+
+### Architecture
+
+- use Mask RCNN and replace backbone with **pyramid VisionLLaMA.**
+
