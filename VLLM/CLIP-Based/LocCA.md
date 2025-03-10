@@ -56,6 +56,9 @@ How they trained three tasks?
 - Model outputs are conditioned on the task prefixes for each task. 
 - Utilize dense regional annotations where each image x is associated with comprehensive set of annotations {(b, c)}. b denote the bounding box coordinates and c represents the corresponding textual descriptions. 
 
+Loss Functions
+- 
+
 References:
 [1] B. Wan et al., “LocCa: Visual Pretraining with Location-aware Captioners,” Nov. 11, 2024, arXiv: arXiv:2403.19596. doi: 10.48550/arXiv.2403.19596.
 [2] Zhai, X., Kolesnikov, A., Houlsby, N., Beyer, L.: Scaling vision transformers. CVPR (2022)

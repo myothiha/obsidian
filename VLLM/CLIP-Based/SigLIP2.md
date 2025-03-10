@@ -34,8 +34,10 @@ SigLIP2 provide the following
 # Training
 
 ## Training with Sigmoid loss and decoder
-
+- Sigmoid Loss [[SigLIP]]
+- [[LocCA]] Loss
 - 
+
 
 
 # SigLIP2 as a vision Encoder in VLMs
