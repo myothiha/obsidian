@@ -4,7 +4,7 @@
 LocCa uses a simple image captioner task interface, to teach a model to read out rich information, i.e. bounding box coordinates, and captions, conditioned on the image pixel input.
 
 Perform well on localization downstream tasks
-
+- use multi-task pre-training to train visual encoders from scratch.
 # Compare with CLIP
 - CLIP focus ono the entiire 
 
@@ -33,9 +33,10 @@ Perform well on localization downstream tasks
 	- from image and bounding box coordinates too predict captions. 
 
 How they trained three? 
-# Multi-task decoder
+## Multi-task decoder
 
 - Model outputs are conditioned on the task prefixes for each task. 
+- 
 
 References:
 [1] B. Wan et al., “LocCa: Visual Pretraining with Location-aware Captioners,” Nov. 11, 2024, arXiv: arXiv:2403.19596. doi: 10.48550/arXiv.2403.19596.
