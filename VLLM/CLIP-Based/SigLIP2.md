@@ -35,7 +35,7 @@ SigLIP2 provide the following
 
 ## Training with Sigmoid loss and decoder
 - Sigmoid Loss [[SigLIP]]
-- [[LocCA]] Loss
+- [[LocCa]] Loss
 - 
 
 
