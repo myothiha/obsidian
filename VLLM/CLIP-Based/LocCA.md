@@ -13,10 +13,11 @@ Perform well on localization downstream tasks
 
 # Architecture [1]
 
-- standard vision transformer (encoder)
-- transformer decoder
+- standard vision transformer (encoder) which use cross attention for (image + text) representation.
+- transformer decoder use casual attention.
 - cross attention from tokens of ViT and to the decoder.
 - The decoder is trained to read rich info from the visual tokens. 
+- Optimizer - Scaling-ViT AdaFactor variant [2].
 
 ![[Screenshot 2025-03-10 at 11.36.02 AM.png]]
 
@@ -25,21 +26,39 @@ Perform well on localization downstream tasks
 
 # Pre-training
 
+## Dataset
+- A subset of WebLII dataset (English)
+- use [[OWL-ViT]] to get pseudo annotated fine-grained object locations. Two groups of box categorieis are generated.
+	- n-gram texts from alt-text
+	- Object categories used by PaLI (https://arxiv.org/abs/2209.06794)
+
 ## Pre-training on Three Tasks
 1. Captioning  - generate a full caption for the given image.
 2. Referring expression - generates captions and the corresponding bounding boxes.
 	- from image and region captions to predicting bounding box coordinates.
 3. Grounded image captioning - generates a bounding box coordinates and the corresponding caption.
-	- from image and bounding box coordinates too predict captions. 
+	- from image and bounding box coordinates to predict captions. 
 
-How they trained three? 
+How they trained three tasks? 
+
+### 1. Image Captioning
+- - Parallel Prediction
+	- Model predict the caption tokens independently in parallel, focusing exclusively on visual information.
+	- Prevent the model from relying on preceding text tokens to predict the following ones. 
+
+### Referring expression & Grounded image captioning
+
+- For an image, filter bounding boxes with 0.3 confidence score or more (by [[OWL-ViT]]).
+- Then, randomly sample one box-caption pair for referring expression and grounded captioning separately.
+
 ## Multi-task decoder
 
 - Model outputs are conditioned on the task prefixes for each task. 
-- 
+- Utilize dense regional annotations where each image x is associated with comprehensive set of annotations {(b, c)}. b denote the bounding box coordinates and c represents the corresponding textual descriptions. 
 
 References:
 [1] B. Wan et al., “LocCa: Visual Pretraining with Location-aware Captioners,” Nov. 11, 2024, arXiv: arXiv:2403.19596. doi: 10.48550/arXiv.2403.19596.
+[2] Zhai, X., Kolesnikov, A., Houlsby, N., Beyer, L.: Scaling vision transformers. CVPR (2022)
 
 
 
