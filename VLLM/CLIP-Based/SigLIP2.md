@@ -24,8 +24,6 @@ SigLIP2 provide the following
 - Same architecture for both image and text tower. 
 - Both image and text representations are pooled using [[MAP]] head.
 - Text length is 64 and use multilnigual Gemma tokenizer.
-- use **Adam optimizer** with batch size 32k.
-- uses a cosine schedule with 20k warmup steps. 
 
 # Dataset
 - use [[WebLI]] 
@@ -33,13 +31,31 @@ SigLIP2 provide the following
 
 # Training
 
+- use **Adam optimizer** with batch size 32k.
+- batch size 32k and uses a cosine schedule with 20k warmup steps.
+
+
 ## Training with Sigmoid loss and decoder
 - Sigmoid Loss [[SigLIP]]
-- [[LocCa]] Loss
+- [[LocCa]] Loss - for three tasks
+
+Training with Self-distillation and Masked Prediction
+- First term: Local-to-global consistency loss. 
+- Second term: Loss from Mask Prediction Objectives.
+	- Replace 50% of embedding image patches in student with mask tokens and train the student to match features of the teacher.
+	- loss is defined as consistency loss (the same as local-to-global) but applied to per patch, instead of pooled (image-level representation)
+- Only add those loss after 80% of the training is completed. In other word, the loss is only applied during the last 20% of the training. 
+	- Initialize the teacher model using the student model parameters plus (heads, mask token and corresponding optimizer parameters) randomly.
+- Use Original image foor computing Sigmoid and LocCa loss.
+- Weight of each loss range between 1 and 0.25. 
+	- Have different weight factors for other model sizes.
 - 
 
+# Evaluation on Each Tasks
 
+## 1. Zero-shot classification and retrieval
+- Baselines on ImageNet, ObjectNet. ImageNet Real.
 
 # SigLIP2 as a vision Encoder in VLMs
 
-SigLIP2 + LLM
+- Use SipLIP2 as a vision encoder
