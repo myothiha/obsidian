@@ -16,7 +16,7 @@
 - just use the pre-trained models for vision encoder, tokenizer and Transformer decoder. 
 
 ## Stage 1: Multimodal pre-training
-- Combine the unimodal models and train the whole model with a mixture of large-scale vision-language tasks. 
+- Combine the unimodal models and train the whole model with **a mixture of large-scale vision-language tasks. (which dataset they use?)** 
 - The image encoder is not frozen during the pre-training so that it can learn from various tasks like [[LocCa]]
 - At initial training stage, Image encoder might receive destructive signals. So, use a slow linear warm-up for the image encoder's learning rate.
 

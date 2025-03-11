@@ -56,6 +56,9 @@ Training with Self-distillation and Masked Prediction
 ## 1. Zero-shot classification and retrieval
 - Baselines on ImageNet, ObjectNet. ImageNet Real.
 
-# SigLIP2 as a vision Encoder in VLMs
+## SigLIP2 as a vision Encoder in VLMs
 
-- Use SipLIP2 as a vision encoder
+- Use SipLIP2 as a vision encoder in [[PaliGemma2]]
+- Perform the stage 1 Training from [[PaliGemma2]] which involve captioning, OCR, grounded captioning, visual question answering, detection and instance segmentation.
+- Noted that vision is frozen during the training.
+- 
