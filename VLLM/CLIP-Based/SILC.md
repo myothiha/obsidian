@@ -9,7 +9,7 @@
 # Architecture
 - student (main model)
 - teacher (Exponential Moving Average) EMA-based Model
-
+![[Screenshot 2025-03-11 at 5.52.25 PM.png]]
 
 
 # Loss/Objective Function
@@ -38,12 +38,21 @@
 
 ![[Screenshot 2025-03-11 at 5.14.38 PM.png]]
 - mc = momentum update on the prev Center.
-- 
 - use on the teacher's prediction.
 
 ### Knowledge-distillation Loss
 
+![[Screenshot 2025-03-11 at 5.56.53 PM.png]]
+
+![[Screenshot 2025-03-11 at 5.57.26 PM.png]]
 ![[Screenshot 2025-03-11 at 5.37.56 PM.png]]
 
+### Notes
+- image-text contrastive loss should be compute for each global view. 
+- The mometum scheduler of EMA should never become 1.0. Otherwise, the teacher stop learning from the image-text loss.
 
 # Evaluation
+
+- Zero-shot classification: ImageNet and CIFAR100.
+- Few-shot classification: ImageNET and CIFAR100.
+- Retrieval: COCO

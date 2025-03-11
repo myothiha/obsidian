@@ -33,8 +33,7 @@
 - use **a mixture of large-scale vision-language tasks. (mix of 27 of our datasets: Appendix B)** 
 - Use a unique prefix word for each task to avoid conflicting learning signals from multiple tasks. Not require for stage 3.
 - Do not use transfer datasets during pre-training and remove their near duplicate image from the pre-trained datasets.
-- Use infinite learning-rate schedule for chaining several stages. I assume they're using the same hyper parameters for all all stage like continue pretraining.
-- 
+- Use infinite learning-rate schedule for chaining several stages. I assume they're using the same hyper parameters for all all stage like continue pre-training.
 
 ## Pre-training tasks
 1. caption {lang}
