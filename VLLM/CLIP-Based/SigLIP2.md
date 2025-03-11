@@ -56,9 +56,21 @@ Training with Self-distillation and Masked Prediction
 ## 1. Zero-shot classification and retrieval
 - Baselines on ImageNet, ObjectNet. ImageNet Real.
 
-## SigLIP2 as a vision Encoder in VLMs
+## 2. SigLIP2 as a vision Encoder in VLMs
 
-- Use SipLIP2 as a vision encoder in [[PaliGemma2]]
+- Use frozen SipLIP2 as a vision encoder in [[PaliGemma2]]
 - Perform the stage 1 Training from [[PaliGemma2]] which involve captioning, OCR, grounded captioning, visual question answering, detection and instance segmentation.
-- Noted that vision is frozen during the training.
+- Fine-tuned the downstream tasks with transfer settings as [[PaliGemma]]
+
+## 3. Dense Prediction Tasks
+
+### Semantic Segmentation
+- use frozen SigLIP2
+- use six benchmarks for semantic segmentation, monocular depth estimation, and surface normal estimation.
+- use [[MAP]] head instead of [CLS] token
+
+### Open Vocabulary Segementation
+- Open-vocabulary segmentation aims to develop models that can segment any novel classes beyond a fixed training vocabulary.
+
+## 4. Localization tasks
 - 
