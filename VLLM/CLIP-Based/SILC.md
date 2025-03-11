@@ -56,3 +56,5 @@
 - Zero-shot classification: ImageNet and CIFAR100.
 - Few-shot classification: ImageNET and CIFAR100.
 - Retrieval: COCO
+
+[1] M. F. Naeem, Y. Xian, X. Zhai, L. Hoyer, L. V. Gool, and F. Tombari, “SILC: Improving Vision Language Pretraining with Self-Distillation,” Dec. 07, 2023, arXiv: arXiv:2310.13355. doi: 10.48550/arXiv.2310.13355.

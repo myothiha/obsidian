@@ -6,10 +6,9 @@ LocCa uses a simple image captioner task interface, to teach a model to read out
 Perform well on localization downstream tasks
 - use multi-task pre-training to train visual encoders from scratch.
 # Compare with CLIP
-- CLIP focus ono the entiire 
+- CLIP focus ono the entire image.
 
 # Localization downstream tasks
-
 
 # Architecture [1]
 
@@ -28,7 +27,7 @@ Perform well on localization downstream tasks
 
 ## Dataset
 - A subset of WebLII dataset (English)
-- use [[OWL-ViT]] to get pseudo annotated fine-grained object locations. Two groups of box categorieis are generated.
+- use [[OWL-ViT]] to get pseudo annotated fine-grained object locations. Two groups of box categories are generated.
 	- n-gram texts from alt-text
 	- Object categories used by PaLI (https://arxiv.org/abs/2209.06794)
 
