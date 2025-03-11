@@ -73,4 +73,12 @@ Training with Self-distillation and Masked Prediction
 - Open-vocabulary segmentation aims to develop models that can segment any novel classes beyond a fixed training vocabulary.
 
 ## 4. Localization tasks
+
+### Referring Expressions
+- use frozen SigLIP2 on different RefCOCOO variants trained from scratch.
+- Only LocCa outperform SigLIP2 (author assume it's because SigLIP2 is multilingual while LocCa is English only)
+
+### Open-vocabulary detection
+- Use [[OWL-ViT]] approach to SigLIP and SigLIP2 models by using same data and optimizer configuration.
+- Benchmarks COCO, LVIS.
 - 
