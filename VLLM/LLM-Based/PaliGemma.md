@@ -26,10 +26,10 @@
 ## Stage 3: Transfer
 - Fine-tuned the pre-trained base model to specific task (e.g COC captions, remote sensing VQA, Video captioning)
 - Also tried tasks with multiple images as input or video frames as multiple images. 
-	- encode each image separately and concatenate the imiage tokens withouot any special separator.
+	- encode each image separately and concatenate the imiage tokens without any special separator.
 - Perform fine-tuning of all model parameters (without freezing anything)
 
-## Pre-traininig details (Stage 1 & 2)
+## Pre-training details (Stage 1 & 2)
 - use **a mixture of large-scale vision-language tasks. (mix of 27 of our datasets: Appendix B)** 
 - Use a unique prefix word for each task to avoid conflicting learning signals from multiple tasks. Not require for stage 3.
 - Do not use transfer datasets during pre-training and remove their near duplicate image from the pre-trained datasets.
