@@ -58,7 +58,8 @@ How they trained three tasks?
 # Model Training
 Loss Functions
 - The optimization of LocCa’s parameters θ is achieved through the maximization of the log-likelihood: ![[Screenshot 2025-03-10 at 4.17.35 PM.png]]
-- Applied the loss to entire prompt. 
+- Applied the **autoregressive loss** to entire prompt. 
+	- Taking the referring expression task as an example, the overall loss is computed for both textual predictions c and box coordinates b.
 - For referring expression and grounded captioning, LocCa is structured to predict captions and bounding boxes sequentially, contrasting with traditional approaches that might predict a caption based on a given bounding box or vice versa.
 
 **References:**
