@@ -34,13 +34,12 @@ SigLIP2 provide the following
 - use **Adam optimizer** with batch size 32k.
 - batch size 32k and uses a cosine schedule with 20k warmup steps.
 
-
 ## Training with Sigmoid loss and decoder
 - Sigmoid Loss [[SigLIP]]
 - [[LocCa]] Loss - for three tasks
 
 Training with Self-distillation and Masked Prediction
-- First term: Local-to-global consistency loss. 
+- First term: Local-to-global consistency loss.
 - Second term: Loss from Mask Prediction Objectives.
 	- Replace 50% of embedding image patches in student with mask tokens and train the student to match features of the teacher.
 	- loss is defined as consistency loss (the same as local-to-global) but applied to per patch, instead of pooled (image-level representation)
