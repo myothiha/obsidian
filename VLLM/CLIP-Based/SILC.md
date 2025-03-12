@@ -4,7 +4,7 @@
 - Learn local image semantics which is useful for segmentation and detection.
 
 # Dataset
-- web-scale paired image-text dataset. (**specific?**)
+- WebLI dataset
 
 # Architecture
 - student (main model)
