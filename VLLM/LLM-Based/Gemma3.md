@@ -8,6 +8,8 @@
 
 - [[SigLIP]] as a Vision Encoder 
 - [[SentencePiece]] as a Tokenizer
+- Grouped-query attentions (GQA)
+- 
 
 # Training Process
 
