@@ -2,7 +2,7 @@
 
 
 # Dataset
-
+- the same as Gemma 2?
 
 # Architecture
 
