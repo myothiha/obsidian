@@ -9,4 +9,4 @@ In addition to [[PaliGemma]]
 
 # Transfer Tasks
 2. Text Detection - Evaluation word level precision, recall, and F1 metrics.
-3. Table structure recognition
+3. Table structure recognition.
