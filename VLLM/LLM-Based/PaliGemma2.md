@@ -6,3 +6,5 @@ In addition to [[PaliGemma]]
 1. Combine SigLIP and Gemma (LLM) and train them on multi-modal task mixture of 1 billion examples.
 2. Training for different resolution.
 3. Transfer for specific tasks.
+
+# 
