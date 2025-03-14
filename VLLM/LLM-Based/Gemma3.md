@@ -7,6 +7,7 @@
 # Architecture
 
 - [[SigLIP]] as a Vision Encoder 
+- [[SentencePiece]] as a Tokenizer
 
 # Training Process
 
