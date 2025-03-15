@@ -17,3 +17,7 @@ In addition to [[PaliGemma]]
 	2. GrandStaff dataset
 6. Generating long fine-grained captions
 	1. fine tune on DOCCI dataset.
+7. Visual Spatial Reasoning
+	1. Classification task to determine if a statement about the spatial relationship of objects in the image is correct or not.
+8. Radiography report generation - Automatic chest X-ray report generation
+	1. Fine tune on 377k X-ray images dataset. 
