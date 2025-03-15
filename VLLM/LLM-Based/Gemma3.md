@@ -2,14 +2,15 @@
 
 
 # Dataset
-- the same as Gemma 2?
+- 
 
 # Architecture
 
 - [[SigLIP]] as a Vision Encoder 
 - [[SentencePiece]] as a Tokenizer
 - Grouped-query attentions (GQA)
-- 
+- Pan and Scan Method for flexible resolutions
+- Pre-training with Knowledge distillation
 
 # Training Process
 
