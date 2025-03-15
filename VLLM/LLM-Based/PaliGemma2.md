@@ -14,4 +14,6 @@ In addition to [[PaliGemma]]
 	1. represent molecule graph structure as SMILES string.
 5. Optical Music Score recognition.
 	1. translate digital representation into kern format.
-	2. 
+	2. GrandStaff dataset
+6. Generating long fine-grained captions
+	1. fine tune on DOCCI dataset.
