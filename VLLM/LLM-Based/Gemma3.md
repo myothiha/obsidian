@@ -13,7 +13,8 @@
 - Pre-training with Knowledge distillation
 
 # Training Process
-
+- Pre-training with dataset (with distillation)
+- Instruction tuning
 
 # Evaluation
 
