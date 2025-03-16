@@ -13,3 +13,29 @@ Categories
 - Interleaved image-text data
 - Image caption data
 - Table and chart
+- Web Code
+- Document Optical Character Recognition (OCR)
+- Text-only (70%)
+
+## VL Supervised Fine-Tuning Data
+1. Recognition
+	- global description
+	- local description
+	- OCR and Transcription
+2. Conversion
+	- Image to Code
+	- Image to Text
+3. Analysis
+4. Common Sense Reasoning
+5. Logical Reasoning
+
+
+# Architecture
+1. Hybrid Vision Encoder - combination of the following.
+	- SigLIP - CLIP-blind pairs problem
+	- Vision encoder (SAM-B)
+2. Vision Language Adaptor (two layer hybrid MLP) - bridge the vision encoder and the LLM.
+	1. 
+3. Language Model
+
+# Training
