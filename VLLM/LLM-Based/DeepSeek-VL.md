@@ -39,3 +39,9 @@ Categories
 3. Language Model
 
 # Training
+
+![[Screenshot 2025-03-16 at 10.44.52 PM.png]]
+
+## Stage 1
+- Vision Encoder and the Language Model are frozen.
+- Train the Vision-Language Adaptor to 
