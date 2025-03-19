@@ -26,8 +26,19 @@ Categories
 	- Image to Code
 	- Image to Text
 3. Analysis
+	1. Data Chart analysis (Graph Interpretation)
+	2. Professional  Chart Analysis (circuit diagram, flowchart)
+	3. Professional Image Analysis (Sensor Image, Biological and Medical Image)
+	4. Encyclopedia Knowledge Analysis (Art and cultural knowledge, Natural Environment knowledge, Food)
 4. Common Sense Reasoning
+	1. Relationship
+	2. Function
+	3. Environment
+	4. Anomaly
+	5. Humor Reasoning
 5. Logical Reasoning
+	1. Math
+	2. Other: Physics, Chemistry, Biology, Code, IQ Questions
 
 
 # Architecture
