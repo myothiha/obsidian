@@ -4,13 +4,15 @@
 
 **Tags**:: #LVLM #World_Knowledge 
 **Links**:: https://aclanthology.org/2024.emnlp-main.110/
-**Paper_Category**:: #Model t
+**Paper_Category**:: #Model 
 **Created**:: 01-11-2024
 ##### Summary
 
 ##### Problem Statement
 
 ##### Methodology
+
+![[Screenshot 2025-03-25 at 1.35.16 PM.png]]
 
 ##### Remark(s)
 
