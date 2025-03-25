@@ -4,7 +4,7 @@
 **Citations**:: 2
 **Published**:: 2024-04-22
 
-**Tags**:: #LVLM #World_Knowledge 
+**Tags**:: #Model #LVLM #MLLM #World_Knowledge 
 **Links**:: https://aclanthology.org/2024.emnlp-main.110/
 **Paper_Category**:: #Model 
 **Created**:: 2025-03-25
