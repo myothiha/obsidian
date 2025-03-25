@@ -1,16 +1,20 @@
-**Title**::
+**Title**:: 
 **Authors**::
+**Journal/Conference**:: 
+**Citations**:
 **DOI**::
+**Published**:: <% tp.file.creation_date("DD-MM-YYYY") %>
 
 **Tags**::
 **Links**::
 **Paper_Category**::
 **Created**:: <% tp.file.creation_date("DD-MM-YYYY") %>
-##### Summary
 
-##### Problem Statement
+# Summary
 
-##### Methodology
+# Problem Statement
 
-##### Remark(s)
+# Methodology
+
+# Remark(s)
 
