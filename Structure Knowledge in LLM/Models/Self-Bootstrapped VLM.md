@@ -1,11 +1,13 @@
 **Title**:: Self-Bootstrapped Visual-Language Model for Knowledge Selection and Question Answering
-**Authors**:: Dongze Hao, Qunbo Wang
-**DOI**::10.18653/v1/2024.emnlp-main.110
+**Authors**:: Dongze Hao, Qunbo Wang, Longteng Guo, Jie Jiang, Jing Liu
+**DOI**:: https://doi.org/10.48550/arXiv.2404.13947
+**Citations**:: 2
+**Published**:: 2024-04-22
 
 **Tags**:: #LVLM #World_Knowledge 
 **Links**:: https://aclanthology.org/2024.emnlp-main.110/
 **Paper_Category**:: #Model 
-**Created**:: 01-11-2024
+**Created**:: 2025-03-25
 ##### Summary
 
 ##### Problem Statement

@@ -3,7 +3,7 @@
 **Journal/Conference**:: CVPR
 **Citations**: 10
 **DOI**:: https://doi.org/10.48550/arXiv.2405.09713
-**Published**:: 15-05-2024
+**Published**:: 2024-05-15
 
 **Tags**:: #Benchmark #MLLM #Video
 **Links**:: https://arxiv.org/abs/2405.09713

@@ -3,12 +3,12 @@
 **Journal/Conference**:: 
 **Citations**:
 **DOI**::
-**Published**:: <% tp.file.creation_date("DD-MM-YYYY") %>
+**Published**:: <% tp.file.creation_date("YYYY-MM-DD") %>
 
 **Tags**::
 **Links**::
 **Paper_Category**::
-**Created**:: <% tp.file.creation_date("DD-MM-YYYY") %>
+**Created**:: <% tp.file.creation_date("YYYY-MM-DD") %>
 
 # Summary
 
