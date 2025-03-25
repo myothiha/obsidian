@@ -10,9 +10,16 @@
 
 ##### Problem Statement
 
-##### Methodology
+# Methodology
+
+## Architecture
 
 ![[Screenshot 2025-03-25 at 1.35.16 PM.png]]
+
+## Evaluation
+- Use [[OK-VQA]] benchmark.
+
+![[Screenshot 2025-03-25 at 3.46.42 PM.png]]
 
 ##### Remark(s)
 
