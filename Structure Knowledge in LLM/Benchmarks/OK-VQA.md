@@ -15,7 +15,18 @@
 # Problem Statement
 
 # Methodology
-![[Screenshot 2025-03-25 at 8.16.03 PM.png]]
+
+## Example Data
+
+![[Screenshot 2025-03-26 at 11.43.48 AM.png]]
+
+## Compare with Other data sources
+
+![[Screenshot 2025-03-26 at 11.42.36 AM.png]]
+# Evaluation
+
+![[Screenshot 2025-03-26 at 11.30.14 AM.png]]
+
 
 # Remark(s)
 

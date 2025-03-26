@@ -16,5 +16,16 @@
 
 # Methodology
 
+## Example Data
+
+![[Screenshot 2025-03-26 at 11.03.45 AM.png]]
+## Compare with other datasets
+
+![[Screenshot 2025-03-26 at 11.49.54 AM.png]]
+# Evaluation
+
+![[Screenshot 2025-03-26 at 11.06.11 AM.png]]
+
+
 # Remark(s)
 

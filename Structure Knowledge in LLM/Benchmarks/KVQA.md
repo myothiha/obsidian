@@ -21,5 +21,9 @@
 
 ![[Screenshot 2025-03-25 at 10.21.56 PM.png]]
 
+## Compare with Other data sources
+
+![[Screenshot 2025-03-26 at 11.41.54 AM.png]]
+
 # Remark(s)
 
