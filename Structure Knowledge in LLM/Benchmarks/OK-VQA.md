@@ -16,6 +16,12 @@
 
 # Methodology
 
+## Knowledge Category
+- Com
+
+## How data are collected?
+- Manually for both questions and answers
+
 ## Example Data
 
 ![[Screenshot 2025-03-26 at 11.43.48 AM.png]]
@@ -23,6 +29,7 @@
 ## Compare with Other data sources
 
 ![[Screenshot 2025-03-26 at 11.42.36 AM.png]]
+
 # Evaluation
 
 ![[Screenshot 2025-03-26 at 11.30.14 AM.png]]
