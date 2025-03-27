@@ -16,8 +16,23 @@
 
 # Methodology
 
-## Knowledge Category
-- Com
+## Knowledge Categories
+- Common-sense Knowledge. i.e Water is wet, couches are found in living rooms.
+- Geographical Knowledge. i.e the Eiffel tower is in Paris.
+- Scientific knowledge. i.e. humans have 23 chromosomes.
+- Historical knowledge. i.e. George Washington is the first U.S. president.
+
+Ten Categories
+1. Vehicles and Transportation
+2. Brands, Companies and Products
+3. Objects, Materials and Clothing
+4. Sports and Recreation
+5. Cooking and Food
+6. Geography, History, Language and Culture
+7. People and Everyday Life, Plants and Animals
+8. Science and Technology
+9. Weather and Climate
+10. Other
 
 ## How data are collected?
 - Manually for both questions and answers
