@@ -1,9 +1,9 @@
 
 # Tasks
-1. Semantic Structure - involves partitioning words based on their part of speech (POS) and shuffling the positions of content words and other words to disrupt compositionality.
+1. Semantic Structure - involves partitioning words based on their part of speech (POS) and shuffling the positions of content words and other words to disrupt compositionally.
 2. Negation Logic - introduces negation words (“not”) into sentences to evaluate the model’s comprehension of negation logic. 
 3. Attribute Ownership presents sentences with different syntactic expressions, including short- and long-distance semantic combinations.
-4. Relationship Composition constructs sentences using .
+4. Relationship Composition constructs sentences using
 	1. Ternary relationship between objects
 		- the girl is wearing the shirt (correct syntactic expression)
 		- the shirt is wearing the girl (incorrect)
