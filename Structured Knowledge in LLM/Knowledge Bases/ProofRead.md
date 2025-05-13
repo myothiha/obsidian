@@ -24,7 +24,8 @@
 ## 1. Answer Prediction Module
 
 - use Frozen Vision Language Model (M)
-- 
+- prompt = knowledge from knowledge prediction module + question.
+- prompt => VLM => answer
 
 ## 2. Knowledge Generation Module
 
