@@ -12,7 +12,8 @@
 
 # Summary
 
-
+- PoofRead framework is introduce. It is for VQA task.
+- Given a question and a image. ProofRead generate questions and extracted related knowledge using those questions. 
 # Problem Statement
 
 
