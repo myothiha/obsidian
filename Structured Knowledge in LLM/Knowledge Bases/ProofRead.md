@@ -29,7 +29,11 @@
 
 ## 2. Knowledge Generation Module
 
-- VQA problem => questions => knowledge questions (Question Model) => answers for those questions (Answer Model)
+Include two models
+- Question Model
+- Answer Model
+
+- VQA problem => questions => knowledge questions (**Question Model**) => answers for those questions (**Answer Model**)
 - a series piece of knowledge about problem P (question).
 - series of Knowledge + Problem => VLM => 
 
