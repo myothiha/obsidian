@@ -11,6 +11,10 @@
 **Created**:: <% tp.file.creation_date("YYYY-MM-DD") %>
 
 **Abstract**::
+
+**How Benchmark Build**::
+
+**Composition of Benchmark**::
 # Summary
 
 # Problem Statement
