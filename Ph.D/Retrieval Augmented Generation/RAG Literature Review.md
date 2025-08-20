@@ -100,15 +100,77 @@ Related Works: FiD-Light [24], a streamlined variant of the Fusion-in-Decoder (F
 
 **Retrieval Conditioned Generation Control**
 
-It control and improve output generation which will be guided by retrieval metadata, the type of the task, 
+It control and improve output generation which will be guided by retrieval metadata, the type of the task. AI agent can also make dynamic decision using all those information. These architectures are particularly suited to domains where factual correctness, reasoning transparency, or structured output formats are essential—such as biomedical QA, finance, and enterprise workflows.
 
 Related Works: AU-RAG (Agent-based Universal RAG) [28] exemplifies this by using an agent to decide dynamically between retrieved and parametric knowledge across diverse data environments. RAG-Ex [62] perturbs retrieval context to analyze how variability influences model behavior and reliance on external evidence. R2AG (Retrieval information into RAG) [82] extends this by recursively reranking candidates during generation, dynamically prioritizing evidence based on the evolving answer state. In high-stakes domains, Confidence-Calibrated RAG [48] shows that document ordering and prompt structure affect output certainty, highlighting the need for calibration alongside factual accuracy.
-## 3. Hybrid
 
+## 3. Hybrid RAG Systems
+
+Hybrid RAG frameworks focus on dynamic coordination and feedback between retrieval and generation, allowing for more flexible, iterative, and robust information processing.
+
+Dominant Architectural Patterns
+- Iterative or Multi-Round Retrieval
+- Utility-Driven Joint Optimization
+- Dynamic Retrieval Triggering
+
+
+**Iterative or Multi-Round Retrieval**
+
+Instead of retrieving all evidence before generating an answer, hybrid systems may alternate retrieval and generation steps, refining the generation as new evidence is fetched. This supports complex reasoning, such as multi-hop question answering, where answering a question requires information from several steps or documents.
+
+Related Works:
+
+IM-RAG (Inner Monologue RAG) [80] simulates an “inner monologue” by alternating between generation and retrieval phases, supporting multi-step reasoning. Generate-Then-Ground (GenGround) [59] follows a similar philosophy, generating a provisional answer first and then retrieving supporting evidence to substantiate or revise it—improving factuality and interpretability in multi-hop settings. G-Retriever [22] retrieves graph-structured subcomponents as generation unfolds, enhancing complex reasoning over textual graphs.
+
+**Utility-Driven Joint Optimization**
+
+Hybrid systems often optimize the retriever and generator together, using feedback from generation to adjust retrieval strategies (similarity scores, sparse). Some use reinforcement learning or joint objectives, aligning the retrieval with the utility for generation instead of static similarity scores.
+
+Related Works:
+Stochastic RAG [84] treats retrieval as an expected utility maximization problem, updating both retriever and generator end-to-end using REINFORCE-based gradients. M-RAG [70] applies multi-agent reinforcement learning, coordinating distributed retrievers and generators via shared memory and task-specific roles. MedGraphRAG [72] integrates knowledge graphs into the joint learning loop, facilitating domain-specific reasoning with structured priors. These systems improve factuality and answer consistency, particularly in biomedical and enterprise domains.
+
+**Dynamic Retrieval Triggering**
+
+**Retrieval can be triggered during generation, not just before.** For instance, DRAGIN activates retrieval at the token level using entropy-based signals, while FLARE selectively retrieves when the model is uncertain about the next word or sentence. Self-ROUTE routes tasks dynamically between retrieval/generation based on difficulty estimation, and TA-ARE uses classifiers to decide if/when retrieval is necessary and what granularity is needed.
+
+Related Works:
+DRAGIN (Dynamic Retrieval Augmented Generation based on the Information Needs of LLMs) [61] triggers retrieval at the token level using entropy-based confidence signals, while FLARE (Forward-Looking Active REtrieval augmented generation () [32] selectively retrieves based on low-confidence predictions during sentence generation. SELF-ROUTE [41] dynamically routes tasks between retrieval and generation modules based on model self-assessed difficulty, and AU-RAG [28] leverages agentic decisionmaking to mediate between diverse retrieval sources and procedural knowledge. TA-ARE (Time-Aware Adaptive REtrieval) [86] introduces a retrieval trigger classifier that adaptively determines when retrieval is necessary and adjusts the granularity of evidence based on query needs. A related approach, CRAG (Corrective RAG) [79], evaluates retrieved evidence quality before generation and dynamically decides whether to proceed with generation, re-trigger retrieval, or decompose the input into simpler sub-queries. This corrective mechanism positions CRAG within the hybrid class, as it tightly coordinates retrieval assessment with adaptive generation pathways under uncertainty.
 
 
 ## 4. Robustness Oriented
 
+Robustness and security-oriented Retrieval-Augmented Generation (RAG) systems are specifically designed to maintain output quality when faced with noisy, irrelevant, or adversarial retrieval contexts. While classic RAG pipelines aim for factual correctness using external evidence, these systems address realistic “worst-case scenarios” that can arise during deployment—such as misleading evidence, retrieval failures, or even deliberate manipulation of the knowledge base.
+
+**Common Strategies**
+- Noise Adaptive Training Objectives
+- Hallucination Aware Decoding Constraints
+- Adversarial Robustness and Security
+
+**Noise Adaptive Training Objectives**
+
+- These systems are trained to be resilient against degraded, irrelevant, or adversarial input evidence.
+- For example, **RAAT** categorizes retrieved passages (relevant, irrelevant, counterfactual) and uses adversarial training to optimize worst-case model performance.
+- “Information Bottleneck” filtering compresses context to retain just the most useful evidence, discarding noisy information to improve answer precision.
+
+Related Works:
+RAAT [18] classifies retrieved passages into relevant, irrelevant, or counterfactual categories and introduces an adversarial training objective to maximize worstcase performance. Bottleneck Noise Filtering [89] applies information bottleneck theory to identify the intersection of useful and noisy information, compressing retrieved context into minimal, high-utility representations. These approaches are particularly effective in retrieval-heavy pipelines where context precision cannot be guaranteed.
+
+**Hallucination Aware Decoding Constraints**
+
+- Focus on reducing factual inaccuracies produced by LLMs when retrieval context is misleading.
+- Approaches like **RAGTruth** provide benchmarks and protocols for hallucination detection, guiding improvements in system design.
+- Structured retrieval (e.g., executable templates as retrieved context) is also used to constrain output format, particularly for domains where errors are costly (e.g., healthcare).
+- Variants such as RAG-Ex inject perturbed documents during training, boosting robustness to inconsistent evidence.
+
+Related Works:
+RAGTruth [46] provides benchmarks and evaluation protocols for hallucination detection, guiding system-level design. Structured retrieval-based approaches have also been explored: one method [24] retrieves executable templates (e.g., JSON workflows) to constrain output generation, minimizing reliance on generative interpolation and reducing domain-specific hallucination. RAG-Ex [62] simulates retrieval variability by injecting perturbed documents during training, improving robustness to inconsistent or adversarial context. In high-stakes domains such as healthcare, Confidence-Calibrated RAG [48] explores how document ordering and prompt design affect both answer accuracy and model certainty.
+
+**Adversarial Robustness and Security**
+
+- These methods counteract risks of active attacks—like corpus poisoning or embedding-level backdoors.
+- BadRAG [78] and TrojanRAG [8] reveal that maliciously inserted passages can trigger targeted (and hard-to-detect) behaviors from models, even if the base LLM remains unchanged.
+- Defensive strategies may include cryptographic document signing, adversarial filtering, or specialized secure retraining, although the latter are not wholly effective and may require further research and proactive design.
+- Privacy issues have also emerged, where both retrieval databases and pretrained corpora can be exploited via prompt engineering. Interestingly, retrieval itself can sometimes help reduce memorization leakage by grounding responses in external documents.
 
 
 # Terms Explanations
@@ -129,6 +191,52 @@ In Retrieval-Augmented Generation (RAG) systems, the term "retrievers may be spa
 - However, sparse retrievers might fall short when queries and documents are phrased differently or require semantic matching rather than simple keyword overlap, which is where dense retrievers excel.
 
 In summary, "retrievers may be sparse" means the RAG system can use retrieval methods like BM25 or similar, which represent and match texts through sparse, token-based vectors.
+
+## A third strategy modulates generation based on retrieval metadata, task-specific cues, or agentic decision-making
+
+The statement "A third strategy modulates generation based on retrieval metadata, task-specific cues, or agentic decision-making" describes an advanced approach in Retrieval-Augmented Generation (RAG) systems where the process of text generation by a language model is **actively controlled or guided** using additional, dynamic signals derived from the retrieval process, the nature of the task, or external agent-like components.
+
+**Breaking Down the Components**
+
+- **Retrieval metadata:** This refers to information about the retrieved documents, such as relevance scores, document order, source type, timestamps, or other attributes attached to retrieved items. The generation model uses this metadata to influence how it interprets or integrates retrieved evidence—e.g., prioritizing highly relevant documents, calibrating confidence, or conditioning responses differently based on document trustworthiness or recency.
+- **Task-specific cues:** Generation can be tailored based on explicit or implicit signals related to the specific task at hand. For instance, in biomedical QA, the system might require stricter factual grounding; in summarization, the model may favor brevity or coverage. These cues help the generation model adjust its behavior (style, depth, faithfulness) according to the goals or constraints of the query.
+- **Agentic decision-making:** Here, an agent or controller (which could be an auxiliary model or a rule-based system) actively decides, at each stage or even during generation, how to incorporate retrieved evidence, when to fetch more information, or whether to trust the model’s internal memory over external sources. Agent-based approaches like AU-RAG let an agent dynamically switch between using parametric (internal) knowledge and non-parametric (retrieved) evidence based on contextual factors.
+
+**What Modulation Means in Practice**
+
+Rather than passively consuming whatever context is retrieved, these systems **dynamically adjust**:
+
+- How much weight to give each retrieved document.
+- Whether to insert, ignore, or emphasize certain facts.
+- When to trigger additional retrieval steps or fallback to model’s internal beliefs (parametric knowledge).
+- How to calibrate confidence or certainty in the output based on retrieval confidence or external agent commands.
+
+**Examples**
+- **AU-RAG’s agentic control:** An agent decides for each part of an answer whether to cite retrieved evidence or to rely on internal parametric memory, adapting strategies for different sub-tasks within a complex query.
+- **Confidence-calibrated generation:** The model may phrase outputs with varying degrees of certainty based on metadata about the strength of retrieved evidence (e.g., "Based on recent studies retrieved...").
+- **Task-aware prompts:** Output format and content are adapted to best fit the information needs specific to a question type (e.g., clinical diagnosis vs. trivia QA), guided by cues about the nature of the task.
+
+**Summary**
+This strategy makes RAG generation more **context-aware, adaptive, and trustworthy** by leveraging retrieval information, task requirements, and intelligent decision modules to actively shape the generated output, rather than relying on a fixed or static pipeline.
+
+## Example Hybrid RAG Strategies
+
+- **Iterative or Multi-Round Retrieval:** The system alternates between retrieving documents and generating answers in several rounds. For example, IM-RAG simulates an “inner monologue” where evidence is repeatedly refined as the answer builds up. GenGround generates an initial answer, then seeks supporting evidence to modify or justify it, supporting interpretability for complex queries.
+- **Utility-Driven Joint Optimization:** Retrieval and generation are updated together, often using reinforcement learning to maximize utility. Stochastic RAG treats retrieval as an expected utility maximization problem, while M-RAG uses multi-agent reinforcement, with distributed retrievers/generators sharing memory and task-specific roles.
+- **Dynamic Retrieval Triggering:** Retrieval can be triggered during generation, not just before. For instance, DRAGIN activates retrieval at the token level using entropy-based signals, while FLARE selectively retrieves when the model is uncertain about the next word or sentence. Self-ROUTE routes tasks dynamically between retrieval/generation based on difficulty estimation, and TA-ARE uses classifiers to decide if/when retrieval is necessary and what granularity is needed.
+- **Corrective Mechanisms:** Frameworks like CRAG evaluate the quality of retrieved evidence before generation and decide to proceed, re-trigger retrieval, or decompose the input if necessary, tightly linking retrieval and generation assessment under uncertainty.
+
+**Advantages of Hybrid RAG Systems**
+- **Better handling of under-specified or evolving queries:** By treating retrieval as an ongoing, contextual process, hybrid systems adapt to queries where information needs may change during answering.
+- **Increased factuality and reasoning transparency:** Iterative feedback can correct hallucinations, integrate new evidence, and ensure every step in reasoning is grounded in retrieved information.
+- **Robustness against noise:** By continuously verifying and updating their context, hybrid RAGs are less prone to be misled by initial irrelevant or noisy retrievals.
+
+**Limitations**
+- **Training Stability:** The co-adaptive and non-linear feedback between retriever and generator can complicate training and optimization.
+- **Latency/Overhead:** Performing retrieval mid-decoding or in multiple rounds increases computation and may introduce delays.
+- **System Transparency:** The complexity of dynamic interactions can make it harder to debug or interpret system behavior.
+
+Hybrid RAG systems **move beyond static pipelines**, enabling **contextual, multi-step reasoning** and **robust answer construction** through joint retriever-generator adaptivity. They are especially useful for open-domain QA, long-context summarization, and domains demanding complex evidence aggregation.
 
 # Remark(s)
 
