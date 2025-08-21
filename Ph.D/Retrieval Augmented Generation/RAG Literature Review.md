@@ -232,15 +232,34 @@ These dimensions are interdependent: poor context relevance often cascades into 
 
 ## Automated Evaluation Frameworks 
 
-ARES [55] introduces an LLM-based judge system that uses few-shot prompted language models to generate synthetic datasets. These judges are trained on three classification tasks corresponding to the core dimensions and use predictionpowered inference (PPI) to align model-based scoring with human judgment. ARES shows significant improvements in accuracy and annotation efficiency, outperforming RAGAS [17] by up to 59.3 percentage points in context relevance. 
+ARES [55] introduces an LLM-based judge system that uses few-shot prompted language models to generate synthetic datasets. These judges are trained on three classification tasks corresponding to the core dimensions and use prediction powered inference (PPI) to align model-based scoring with human judgment. ARES shows significant improvements in accuracy and annotation efficiency, outperforming RAGAS [17] by up to 59.3 percentage points in context relevance. 
 
 RAGAS employs a modular framework that decomposes generated answers into atomic factual statements, then evaluates each against the retrieved context using LLMs. This structure provides high-resolution feedback, revealing which parts of an answer are hallucinated. 
 
 These frameworks automate the evaluation of faithfulness, grounding, and contextual relevance—enabling scalable, reference-free analysis of RAG performance.
 
+## LLM as an Information Refiner.
+
+eRAG [56] challenges traditional relevance label techniques by applying the RAG generator to each retrieved document individually. INFO-RAG introduces an unsupervised training paradigm that improves the LLM’s ability to refine retrieved information under three scenarios: redundant, noisy, or insufficient context. By viewing the LLM as an “information refiner,” it enables the model to extract relevant content, reject misinformation, and infer missing details—enhancing retrieval robustness without supervised relevance labels.
+
+## Evaluating different RAG Capabilities
+
+1. **Robustness to retrieval noise**. check robustness to noise, negative rejection, information integration and counterfactual resistance. (e.g. RGB [7], RAG-Bench [18])
+2. **Faithfulness and hallucination detection** - (e.g. RAGTruth [46])
+3. **Reasoning and retrieval chaining** - central to multi-hop question answering, where evidence spans multiple documents. (e.g. MultiHop-RAG [63])
+4. **Adaptive retrieval and necessity estimation** - mixes queries requiring external retrieval with those answerable via the base LLM alone (RetrievalQA [86]).  This design tests whether models can intelligently toggle retrieval based on query uncertainty, supporting the development of resource-efficient, retrieval-aware systems that avoid introducing unnecessary context.
+5. **Domain-specific evaluation** - MIRAGE [48], a benchmark tailored to medical RAG. incorporates real-world evaluation constraints
+6. **Cross-corpus and federated retrieval** - showcase key risks in multi-source RAG pipelines, especially retrieval inconsistency and hallucination amplification due to poor corpus coordination (FeB4RAG [68]).
+7. **Evaluation infrastructure and reproducibility** - BERGEN [52], a benchmarking library designed to unify assessment across RAG components.
+
+# Future Directions (Possible Gaps)
+
+
+
 # Terms Explanations
 
 In Retrieval-Augmented Generation (RAG) systems, the term "retrievers may be sparse" refers to a type of retrieval model that relies on sparse representations of text, typically using techniques based on term frequency and document matching rather than dense neural embeddings.
+uRAG proposes a unified retrieval system that serves multiple RAG models across diverse downstream tasks. It introduces a shared reranker trained on feedback signals (e.g., EM, accuracy) from various black-box LLMs, treating each LLM as a user of the search engine. uRAG’s training protocol enables evaluation and optimization of retrieval based on downstream task performance, offering retrieval diagnostics grounded in actual utility rather than surface similarity.
 
 ## Sparse Retrievers Explained
 
