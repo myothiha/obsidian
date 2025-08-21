@@ -71,5 +71,5 @@ Task Formulation,
 
 Use pertained models such as BERT [13] to generate dense vector representation for both input queries and documents (product knowledge?).
 Then, Top-k products with highest similarity scores will be retrieved.
-Adopt multi-vector representations [22, 31] by fine-tuning the prefix and product encoders with e-commerce data.
+Adopt multi-vector representations [22, 31] by fine-tuning the prefix and product encoders with e-commerce data. 
 
