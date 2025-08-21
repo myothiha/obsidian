@@ -172,7 +172,7 @@ RAGTruth [46] provides benchmarks and evaluation protocols for hallucination det
 - Defensive strategies may include cryptographic document signing, adversarial filtering, or specialized secure retraining, although the latter are not wholly effective and may require further research and proactive design.
 - Privacy issues have also emerged, where both retrieval databases and pretrained corpora can be exploited via prompt engineering. Interestingly, retrieval itself can sometimes help reduce memorization leakage by grounding responses in external documents.
 
-## 5 Key Area where 
+## 5 Key Area of Critical Improvement in RAG 
 
 Section 4 of the survey details five key areas where RAG systems have recently seen critical improvements, addressing their main bottlenecks and increasing their real-world effectiveness.
 
@@ -254,7 +254,11 @@ eRAG [56] challenges traditional relevance label techniques by applying the RAG 
 
 # Future Directions (Possible Gaps)
 
-
+- Retrieval Adaptiveness and Semantic alignment - Current RAG architectures often rely on static retrieval policies and fixed embedding transformations, limiting their adaptability to complex or evolving user queries. Future systems must support dynamically calibrated retrieval strategies.
+-  Robustness under noise - 
+- Multi-Hop Reasoning and Structured Compositionality - solving questions by connecting information from multiple sources or steps; cross-domain generalization
+- Cross-Domain Generalization and Temporal Adaptivity - making a system work well in different fields and keeping it current performance.
+- Explainability, Personalization, and Trust Calibration - Future architectures should expose transparent interfaces for explaining retrieval decisions and generation provenance.
 
 # Terms Explanations
 
