@@ -172,6 +172,71 @@ RAGTruth [46] provides benchmarks and evaluation protocols for hallucination det
 - Defensive strategies may include cryptographic document signing, adversarial filtering, or specialized secure retraining, although the latter are not wholly effective and may require further research and proactive design.
 - Privacy issues have also emerged, where both retrieval databases and pretrained corpora can be exploited via prompt engineering. Interestingly, retrieval itself can sometimes help reduce memorization leakage by grounding responses in external documents.
 
+## 5 Key Area where 
+
+Section 4 of the survey details five key areas where RAG systems have recently seen critical improvements, addressing their main bottlenecks and increasing their real-world effectiveness.
+
+## 1. Retrieval Enhancement
+
+- **Adaptive Retrieval:** Dynamically determines **when to retrieve** (e.g., when model confidence is low), reducing redundant operations for efficiency. Examples include TA-ARE, DRAGIN, and FLARE, showing measurable gains in precision and latency reduction, though sometimes at the expense of **computational overhead**.
+- **Multi-source Retrieval:** Retrieves from several knowledge sources (**what to retrieve**) (e.g., AU-RAG, SimRAG), increasing answer coverage and adaptability, especially in evolving or specialized domains, though pipeline complexity rises.
+- **Query Refinement:** Refines or decomposes ambiguous user queries (RQ-RAG, R2AG), boosting retrieval relevance and clarity for complex inputs, but **adds extra inference steps and cost.**
+- **Hybrid/Structured Retrieval:** Integrates structured (e.g., knowledge graphs) and unstructured sources (e.g., text). Innovations like M-RAG and KRAGEN improve accuracy for tasks needing rich, multi-relational evidence, but tend to be **slower or more memory-intensive.**
+
+## 2. Enhancing Context Relevance through Filtering
+
+Aim to reduce hallucinations by selecting only contextually appropriate content. 
+
+- **Lexical/Statistical Filtering:** Removes non-relevant documents based on token overlap or simple metrics (e.g., FILCO), quickly increasing end-to-end faithfulness but **limited in domain generalization.**
+- **Information-Theoretic Filtering:** Uses information bottleneck theory to keep only the most utility-dense evidence (IB Filtering, Stochastic Filtering), offering a trade-off between precision and computational demand.
+- **Self-Supervised Filtering:** Employs feedback from the LLM or synthetic judgments (SEER, RAG-Ex) to pick the truly helpful passages, especially valuable in open-ended or long-form tasks—though **training and inference can be costly.**
+
+## 3. Efficiency Optimizations (Relevant to Ph.D Topic)
+
+- **Sparse Selection & Context Reduction:** Selects only “high-signal” context tokens to lower resource demands (**Sparse RAG, R2AG**), but **may discard important details if the retriever is suboptimal**.
+- **Inference Acceleration:** Faster decoding and retrieval overlap (FiD-Light, Speculative Pipelining) cut latency, but risk hallucinations or minor precision loss.
+- **Caching & Redundancy Reduction:** Schemes like RAGCache reduce recomputation—crucial for highvolume workloads—though cache management can be complex.
+- **Retrieval Faithfulness and Answer Relevance:** Improved scoring (RAE) aligns retrieved content with generation needs, boosting factuality at the retraining cost.
+
+FiD-Light and RAGCache demonstrate that passage compression and caching can substantially reduce latency without compromising accuracy. Ablating vector sparsity or caching mechanisms (e.g., speculative pipelining or prefix-aware replacement) increases inference time up to 4×, underscoring the operational significance of architectural optimization in production RAG systems. (p.17)
+
+Taken together, these optimization strategies enhance efficiency across the RAG pipeline: Sparse RAG and R2AG improve alignment between retrieved documents and generation; FiD-Light and Speculative Pipelining reduce latency during inference; RAGCache and PGDSF minimize recomputation in high-throughput environments; and RAE advances retrieval faithfulness. Collectively, they represent a move toward more scalable, accurate, and computationally efficient RAG systems.
+
+## 4. Improving Robustness
+
+- **Noise Mitigation:** Adversarial training (RAAT) and robust inference filtering (CRAG) defend systems against noisy, misleading, or adversarial context, substantially raising F1 scores and precision in difficult scenarios, though setup or training can be expensive.
+- **Hallucination Reduction:** Output constraints and iterative refinement (Structured RAG, IM-RAG) directly lower hallucination rates, but **may slow response or need manual updates.**
+- **Security Defenses:** Focused on adversarial attacks like corpus poisoning (BadRAG, TrojanRAG), with approaches from filtering to cryptographic integrity checks—but these are only partially effective and comprehensive solutions remain an open problem.
+
+## 5. Reranking Optimization
+
+- **Adaptive Reranking:** Dynamically alters the number of reranked documents for efficiency and better results in real time (RLT, ToolRerank).
+- **Unified Pipelines:** Merges ranking and generation for efficiency and consistency (RankRAG, uRAG).
+- **Fusion-Based Reranking:** Aggregates and iteratively fuses evidence from multiple queries (RAG-Fusion, R2AG), improving multi-hop robustness but **often increasing latency**.
+    
+
+---
+
+These advances collectively make RAG systems significantly more accurate, efficient, and trustworthy for knowledge-intensive applications, while also surfacing new trade-offs between speed, faithfulness, security, and scalability.
+
+# Evaluations
+
+## Evaluation Dimensions 
+
+The core dimensions [55] used to evaluate RAG systems include: 
+1. Context Relevance: Measures how pertinent the retrieved documents are to the input query. 
+2. Answer Faithfulness: Assesses whether the generated output remains grounded in the retrieved evidence. 
+3. Answer Relevance: Evaluates whether the output adequately addresses the user query. 
+
+These dimensions are interdependent: poor context relevance often cascades into reduced faithfulness and answer relevance, underscoring the need for joint evaluation. Frameworks such as ARES and RAGAS have formalized these dimensions, incorporating both automated judgment and reference-free evaluation.
+
+## Automated Evaluation Frameworks 
+
+ARES [55] introduces an LLM-based judge system that uses few-shot prompted language models to generate synthetic datasets. These judges are trained on three classification tasks corresponding to the core dimensions and use predictionpowered inference (PPI) to align model-based scoring with human judgment. ARES shows significant improvements in accuracy and annotation efficiency, outperforming RAGAS [17] by up to 59.3 percentage points in context relevance. 
+
+RAGAS employs a modular framework that decomposes generated answers into atomic factual statements, then evaluates each against the retrieved context using LLMs. This structure provides high-resolution feedback, revealing which parts of an answer are hallucinated. 
+
+These frameworks automate the evaluation of faithfulness, grounding, and contextual relevance—enabling scalable, reference-free analysis of RAG performance.
 
 # Terms Explanations
 
