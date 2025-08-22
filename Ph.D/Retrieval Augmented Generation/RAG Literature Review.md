@@ -54,7 +54,6 @@ Different Architecture Style (Designs)
 They assume that retrieving relevant and reliable context are the most critical factors for accurate and grounded generation. 
 
 **Common Design Patterns**
-
 - Input Query Enhancement
 - Retrieval Adaption
 - Retrieval granularity optimization
@@ -175,14 +174,14 @@ RAGTruth [46] provides benchmarks and evaluation protocols for hallucination det
 
 Section 4 of the survey details five key areas where RAG systems have recently seen critical improvements, addressing their main bottlenecks and increasing their real-world effectiveness.
 
-## 1. Retrieval Enhancement
+### 1. Retrieval Enhancement
 
 - **Adaptive Retrieval:** Dynamically determines **when to retrieve** (e.g., when model confidence is low), reducing redundant operations for efficiency. Examples include TA-ARE, DRAGIN, and FLARE, showing measurable gains in precision and latency reduction, though sometimes at the expense of **computational overhead**.
 - **Multi-source Retrieval:** Retrieves from several knowledge sources (**what to retrieve**) (e.g., AU-RAG, SimRAG), increasing answer coverage and adaptability, especially in evolving or specialized domains, though pipeline complexity rises.
 - **Query Refinement:** Refines or decomposes ambiguous user queries (RQ-RAG, R2AG), boosting retrieval relevance and clarity for complex inputs, but **adds extra inference steps and cost.**
 - **Hybrid/Structured Retrieval:** Integrates structured (e.g., knowledge graphs) and unstructured sources (e.g., text). Innovations like M-RAG and KRAGEN improve accuracy for tasks needing rich, multi-relational evidence, but tend to be **slower or more memory-intensive.**
 
-## 2. Enhancing Context Relevance through Filtering
+### 2. Enhancing Context Relevance through Filtering
 
 Aim to reduce hallucinations by selecting only contextually appropriate content. 
 
@@ -190,7 +189,7 @@ Aim to reduce hallucinations by selecting only contextually appropriate content.
 - **Information-Theoretic Filtering:** Uses information bottleneck theory to keep only the most utility-dense evidence (IB Filtering, Stochastic Filtering), offering a trade-off between precision and computational demand.
 - **Self-Supervised Filtering:** Employs feedback from the LLM or synthetic judgments (SEER, RAG-Ex) to pick the truly helpful passages, especially valuable in open-ended or long-form tasks—though **training and inference can be costly.**
 
-## 3. Efficiency Optimizations (Relevant to Ph.D Topic)
+### 3. Efficiency Optimizations (Relevant to Ph.D Topic)
 
 - **Sparse Selection & Context Reduction:** Selects only “high-signal” context tokens to lower resource demands (**Sparse RAG, R2AG**), but **may discard important details if the retriever is suboptimal**.
 - **Inference Acceleration:** Faster decoding and retrieval overlap (FiD-Light, Speculative Pipelining) cut latency, but risk hallucinations or minor precision loss.
@@ -201,13 +200,13 @@ FiD-Light and RAGCache demonstrate that passage compression and caching can subs
 
 Taken together, these optimization strategies enhance efficiency across the RAG pipeline: Sparse RAG and R2AG improve alignment between retrieved documents and generation; FiD-Light and Speculative Pipelining reduce latency during inference; RAGCache and PGDSF minimize recomputation in high-throughput environments; and RAE advances retrieval faithfulness. Collectively, they represent a move toward more scalable, accurate, and computationally efficient RAG systems.
 
-## 4. Improving Robustness
+### 4. Improving Robustness
 
 - **Noise Mitigation:** Adversarial training (RAAT) and robust inference filtering (CRAG) defend systems against noisy, misleading, or adversarial context, substantially raising F1 scores and precision in difficult scenarios, though setup or training can be expensive.
 - **Hallucination Reduction:** Output constraints and iterative refinement (Structured RAG, IM-RAG) directly lower hallucination rates, but **may slow response or need manual updates.**
 - **Security Defenses:** Focused on adversarial attacks like corpus poisoning (BadRAG, TrojanRAG), with approaches from filtering to cryptographic integrity checks—but these are only partially effective and comprehensive solutions remain an open problem.
 
-## 5. Reranking Optimization
+### 5. Reranking Optimization
 
 - **Adaptive Reranking:** Dynamically alters the number of reranked documents for efficiency and better results in real time (RLT, ToolRerank).
 - **Unified Pipelines:** Merges ranking and generation for efficiency and consistency (RankRAG, uRAG).
