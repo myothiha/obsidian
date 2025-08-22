@@ -262,7 +262,10 @@ eRAG [56] challenges traditional relevance label techniques by applying the RAG 
 
 # Terms Explanations
 
+## Retrievers may be sparse
+
 In Retrieval-Augmented Generation (RAG) systems, the term "retrievers may be sparse" refers to a type of retrieval model that relies on sparse representations of text, typically using techniques based on term frequency and document matching rather than dense neural embeddings.
+
 uRAG proposes a unified retrieval system that serves multiple RAG models across diverse downstream tasks. It introduces a shared reranker trained on feedback signals (e.g., EM, accuracy) from various black-box LLMs, treating each LLM as a user of the search engine. uRAG’s training protocol enables evaluation and optimization of retrieval based on downstream task performance, offering retrieval diagnostics grounded in actual utility rather than surface similarity.
 
 ## Sparse Retrievers Explained
@@ -326,5 +329,10 @@ This strategy makes RAG generation more **context-aware, adaptive, and trustwor
 
 Hybrid RAG systems **move beyond static pipelines**, enabling **contextual, multi-step reasoning** and **robust answer construction** through joint retriever-generator adaptivity. They are especially useful for open-domain QA, long-context summarization, and domains demanding complex evidence aggregation.
 
+
+
 # Remark(s)
 
+# References
+
+[[@sharmaRetrievalAugmentedGenerationComprehensive2025]]

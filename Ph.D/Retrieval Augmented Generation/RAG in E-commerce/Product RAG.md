@@ -95,5 +95,6 @@ Based on architecture of RAG-Sequence Model [23] to generate one suggestion for 
 - ProductRAG with the multi-vector retrieval model outperforms baseline models (including BM25 and pure generative models) on standard metrics like ROUGE for textual similarity and Mean Reciprocal Rank (MRR) and Hit Ratio (HR) for product relevance.
 - The multi-vector retrieval significantly improves retrieval of the correct product for the prefix compared to BM25, leading to better auto-completion quality and user intent matching.
 
-
+References:
+[[@sunProductAwareQueryAutoCompletion2024]]
 [1] F. Sun et al., “A Product-Aware Query Auto-Completion Framework for E-Commerce Search via Retrieval-Augmented Generation Method,” 2024.
