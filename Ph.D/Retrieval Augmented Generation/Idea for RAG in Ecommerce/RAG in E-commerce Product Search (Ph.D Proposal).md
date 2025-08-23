@@ -1,0 +1,19 @@
+
+# Introduction
+
+Though LLMs excel at natural language processing and generation, its knowledge are limited to their training corpus. They are unable to answer or hallucinate when they have to perform tasks which require knowledge beyond their their internal knowledge. Retrieval Augmented Generation is technique that can help LLMs to cover come that limitation by retrieving knowledge from the external knowledge source and provide them to LLMs as the contextual information. LLM can now access the external knowledge required to perform the tasks.
+
+The product search feature of the E-commerce systems is the essential features since it is the interface where user can access their desired products. Showing all the products relevant to the user search query is essential to ensure customer satisfaction and promote sales of all products. However, most users' queries are not simple keywords like laptop, earphones that can map to exact product name to categories. They might not even know what they're searching for. For example, a query can be "a powerful computer for an AI professional" which required understanding of unstructured product knowledge to find relevant products to the queries. The power of LLM is understand and process un-structure natural language and RAG provide the ability to integrate external product knowledge into LLMs to implement a powerful semantic product search in E-commerce systems.
+
+# Background
+
+RAG systems involve two main components: a retriever and a generator. When a user provide a complete / partial query, a retriever extract knowledge from the sources that is relevant to the input and provide it to the LLM [1]. 
+
+
+
+[1] C. Sharma, “Retrieval-Augmented Generation: A Comprehensive Survey of Architectures, Enhancements, and Robustness Frontiers,” May 28, 2025, arXiv: arXiv:2506.00054. doi: 10.48550/arXiv.2506.00054.
+[2] F. Sun et al., “A Product-Aware Query Auto-Completion Framework for E-Commerce Search via Retrieval-Augmented Generation Method,” 2024.
+[3] K. Guan, Q. Cao, Y. Sun, X. Wang, and R. Song, “BSharedRAG: Backbone Shared Retrieval-Augmented Generation for the E-commerce Domain,” Sept. 30, 2024, arXiv: arXiv:2409.20075. doi: 10.48550/arXiv.2409.20075.
+
+
+

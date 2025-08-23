@@ -18,6 +18,4 @@ There are two possible approaches.
 - Coding Based if the product information are in structured or semi-structure database such as SQL, non-SQL.
 
 
-Synthetic Dataset
 
-- High quality query can be used to retrieve its original product in the top list.
