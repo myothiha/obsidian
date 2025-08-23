@@ -10,9 +10,9 @@ LLM will be used as a reasoning step using CoT
 - chain of thought reasoning to retrieve relevant product according to the intent.
 
 Building a Retriever
-- a simple  
+- a simple 
 
-There can be two approaches.
+There are two possible approaches.
 
 - Vector based approached
 - Coding Based if the product information are in structured or semi-structure database such as SQL, non-SQL.
