@@ -24,10 +24,18 @@ RAG systems involve two main components: a retriever and a generator. When a use
 
 Similarly, generator based RAG system focus on generator part. The common pattern involve Faithfulness awareness decoding, context compression, utility filtering and generation control [1].  They improve RAG generator by refining model's output, making sure the output is grounded in the retrieved passage, compressing retriever output so that it fit the context window of LLM, adjust reranking based on the task so that only knowledge relevant to the task is remained. 
 
-Propose Approach
+# Propose Approach
 
+# Dataset
 
+# Evaluation
 
+We need to evaluate perform several evaluation on different components and different aspect of the proposed to make sure it usable in the real world E-commerce setting. There are several evaluation dimension for this system.
+1. Context Relevance: evaluate how the proposed system fetch products and offers relevant to the user queries. We can use nDCG@10, MRR, Success@1, Recall@k for the measurement of relevancy.
+2. Efficiency: evaluate average response times and energy consumption for the queries. 
+3. Robustness: check the noise tolerance of the proposed system.
+4. Cost & Throughput: Euro per 1k queries, tokens/query for paid LLMs. 
+5. 
 
 
 [1] C. Sharma, “Retrieval-Augmented Generation: A Comprehensive Survey of Architectures, Enhancements, and Robustness Frontiers,” May 28, 2025, arXiv: arXiv:2506.00054. doi: 10.48550/arXiv.2506.00054.
