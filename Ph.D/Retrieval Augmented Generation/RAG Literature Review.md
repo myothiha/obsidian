@@ -95,7 +95,7 @@ Related works: SELF-RAG (Self-Reflective RAG) [1] introduces a critique–genera
 
 It address context window limitations by optimizing retrieval inputs into denser or more structured forms.
 
-Related Works: FiD-Light [24], a streamlined variant of the Fusion-in-Decoder (FiD) architecture [27], improves decoding efficiency by compressing encoder outputs across retrieved passages and pruning cross-passage attention without modifying retrieval mechanisms. xRAG [10] projects document embeddings directly into the model’s representation space, minimizing token overhead through modality fusion. Rich Answer Encoding (RAE) [26] enhances retrieval relevance by embedding answer-aligned semantics into retriever outputs rather than relying on token overlap. GenRT [75] further refines retrieval utility by reranking and dynamically truncating
+Related Works: FiD-Light [24], a streamlined variant of the Fusion-in-Decoder (FiD) architecture [27], improves decoding efficiency by compressing encoder outputs a cross retrieved passages and pruning cross-passage attention without modifying retrieval mechanisms. xRAG [10] projects document embeddings directly into the model’s representation space, minimizing token overhead through modality fusion. Rich Answer Encoding (RAE) [26] enhances retrieval relevance by embedding answer-aligned semantics into retriever outputs rather than relying on token overlap. GenRT [75] further refines retrieval utility by reranking and dynamically truncating
 
 **Retrieval Conditioned Generation Control**
 
