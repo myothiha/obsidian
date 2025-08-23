@@ -7,7 +7,13 @@ The product search feature of the E-commerce systems is the essential features s
 
 # Background
 
-RAG systems involve two main components: a retriever and a generator. When a user provide a complete / partial query, a retriever extract knowledge from the sources that is relevant to the input and provide it to the LLM [1]. 
+RAG systems involve two main components: a retriever and a generator. When a user provide a complete / partial query, a retriever extract knowledge from the sources that is relevant to the input and provide it to the LLM to generate answer to the query [1]. Depending on those component, RAG researches have four directions in general: retriever oriented, generator oriented, hybrid and robustness oriented approaches.  Retriever oriented RAG system focus on optimizing the retriever part of the system by refining input query, enhancing retriever architecture, filtering irrelevant information from the passive, and compressing long information into compact efficient representation. 
+
+Similarly, generator based RAG system focus on generator part. The common pattern involve Faithfulness awareness decoding, context compression, utility filtering and generation control [1].  They improve RAG generator by refining model's output, making sure the output is grounded in the retrieved passage, compressing retriever output so that it fit the context window of LLM, adjust reranking based on the task so that only knowledge relevant to the task is remained. 
+
+Propose Approach
+
+
 
 
 
