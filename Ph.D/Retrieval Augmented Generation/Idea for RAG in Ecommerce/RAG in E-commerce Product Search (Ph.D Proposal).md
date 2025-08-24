@@ -65,7 +65,6 @@ A model to classify each user queries into the following categories.
 - Queries that can be deal with traditional search.
 - Queries that require reasoning ability of small LLMs.
 - Queries that require to use external LLM service.
-
 ### Conduct a critical assessment of commercial solutions (e.g. Google Vertex AI Agent Builder) to benchmark against the proposed solution. 
 # Dataset
 
@@ -73,7 +72,7 @@ A model to classify each user queries into the following categories.
 
 We need to evaluate perform several evaluation on different components and different aspect of the proposed to make sure it usable in the real world E-commerce setting. There are several evaluation dimension for this system.
 1. Context Relevance: evaluate how the proposed system fetch products and offers relevant to the user queries. We can use nDCG@10, MRR, Success@1, Recall@k for the measurement of relevancy.
-2. Efficiency: evaluate average response times and energy consumption for the queries. 
+2. Efficiency (Latency): evaluate average response times and energy consumption for the queries. 
 3. Robustness: check the noise tolerance of the proposed system.
 4. Cost & Throughput: Euro per 1k queries, tokens/query for paid LLMs. 
 
