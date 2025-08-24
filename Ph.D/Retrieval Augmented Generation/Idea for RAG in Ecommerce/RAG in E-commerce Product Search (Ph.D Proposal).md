@@ -28,7 +28,11 @@ On the other hand, hybrid RAG systems involve both retriever and generator. Inst
 
 Finally, robustness and security-oriented RAG systems focus on improving robustness against irrelevant or misleading context, detecting incorrect or hallucinating information in the generation, and preventing semantic backdoors attacks trigged by intentionally passages to prevent possible security compromise [1]. 
 
-In E-commerce setting, there are limited research 
+In the e-commerce setting, research on Retrieval-Augmented Generation (RAG) remains limited, primarily due to the scarcity of large-scale datasets. Product search datasets, in particular, would need to include extensive product information, user reviews, search logs, and user journey data, all of which raise privacy concerns and face business regulations that hinder open research [6]. Within this constrained landscape, three representative works are found to be highly related to our research. 
+
+The first is ProductRAG by Amazon Research [2], a framework designed to improve query auto-completion (QAC) by generating precise suggestions grounded in product knowledge and aligned with the user’s search prefixes. The second is BSharedRAG [3], which employs a single large language model backbone fine-tuned on an e-commerce corpus, with LoRA adapters applied for both retrieval and generation tasks. By sharing information between the retriever and generator through the adapters, it highlights a promising direction for improving alignment and efficiency in e-commerce RAG systems. 
+
+The third is a graph-based RAG framework [7], which constructs an item–feature knowledge graph from user reviews and integrates it into the retrieval process. By leveraging graph traversal to explore both explicit and implicit item–feature connections, this framework enhances the diversity, fidelity, and contextual grounding of generated product descriptions. Together, these studies represent the most relevant and reputable RAG approaches for e-commerce to date, but they also reveal gaps in efficiency, scalability, and evaluation that our work seeks to address.
 
 # Propose Approach
 
@@ -50,6 +54,10 @@ We need to evaluate perform several evaluation on different components and diffe
 [3] K. Guan, Q. Cao, Y. Sun, X. Wang, and R. Song, “BSharedRAG: Backbone Shared Retrieval-Augmented Generation for the E-commerce Domain,” Sept. 30, 2024, arXiv: arXiv:2409.20075. doi: 10.48550/arXiv.2409.20075.
 [4] Akari Asai, Zeqiu Wu, Yizhong Wang, Avirup Sil, and Hannaneh Hajishirzi. 2024. Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection. In The Twelfth International Conference on Learning Representations. https://openreview.net/forum?id=hSyW5go0v8
 [5] Chi-Min Chan, Chunpu Xu, Ruibin Yuan, Hongyin Luo, Wei Xue, Yike Guo, and Jie Fu. 2024. RQ-RAG: Learning to Refine Queries for Retrieval Augmented Generation. In First Conference on Language Modeling. https://openreview.net/forum?id=tzE7VqsaJ4
+[6] M. Tsagkias, T. H. King, S. Kallumadi, V. Murdock, and M. De Rijke, “Challenges and research opportunities in eCommerce search and recommendations,” SIGIR Forum, vol. 54, no. 1, pp. 1–23, June 2020, doi: 10.1145/3451964.3451966.
+[7] J. Yang, Y. Jia, C. Yang, Y. Liang, and L. Lin, “Boosting E-commerce Content Diversity: A Graph-based RAG Approach with User Reviews,” in Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2, Toronto ON Canada: ACM, Aug. 2025, pp. 3495–3506. doi: 10.1145/3711896.3736864.
+
+
 
 
 
