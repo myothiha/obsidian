@@ -37,21 +37,32 @@ The third is a graph-based RAG framework [7], which constructs an item–feature
 # Propose Approach
 
 In this section,  several methods will be proposed to achieve the to objectives of the research. 
-
 ### RAG Architecture
 
-To implement an effective and efficient RAG system for real world E-commerce systems, we propose a system with following components 
-- Query Classification
+To implement an effective and efficient RAG system for real world E-commerce systems, we propose a system with following processes:
+- Query Classification and Data Chunking
 - A retriever
 - A generator (optional in some case)
 
-First, query classification will be perform to decide the best mechanism to fulfill that query. Currently, we propose three type of mechanism to perform product search: simple keyword search, LLM or BERT based retrieval, or external LLM based search. The rationale is that queries can vary in their complexity levels. Therefore, different mechanism are required and also minimize the cost and energy required to perform 
+**Query Classification and Data Chunking**
 
- First, the retriever need to match user's input queries to relevant products. For this tasking, understanding user intent and comprehensive products and offers knowledge are essential. To improve the understanding of user intent, we can adopt method from some researches such as RQ-RAG [5], GMR [9] and RAG-Fusion [10]. RQ-RAG improve user intent by rewriting, decomposition and disambiguation to have a clearer query before the retrieval process [5]. On the other hand, RAG-fusion breakdown the original query into multiple sub and alternative queries to cover different interpretations and subtopics in several contents [10]. Similarly, GMR also focus on user queries with multiple hops, but it use reasoning chains to generate step by step modeling to retrieve the relevant information [9]. 
+First, query classification will be perform to decide the best mechanism to fulfill that query. Currently, we propose hybrid mechanism to perform product search: hybrid with simple keyword search and RAG based search with LLM. The rationale is that different mechanisms will be required for different query complexity and also minimizing the cost and energy required at the same time. 
 
-After that, we can retrieve the 
+For RAG based product search, we proposed having a intermediate step for fetching a subset of products or offers data SQL, python or any appropriate data modeling language before the retrieval process. Since the data size is significant with tens of millions of records, it is impractical for computing similarity scores for all products and offers with the provided query. Therefore, it is more efficient only focus on one or a few chunk of data depending on their categories and other information. In addition, process each chunk in parallel will speed up the process dramatically. 
+
+For the effective chunking, understanding user intent and comprehensive products and offers knowledge are essential. Only when we know what user is searching for, we can effectively fetch the data selectively matching the intent. Therefore, to improve the understanding of user intent, we can adopt method from some researches such as RQ-RAG [5], GMR [9] and RAG-Fusion [10]. RQ-RAG improve user intent by rewriting, decomposition and disambiguation to have a clearer query before the retrieval process [5]. On the other hand, RAG-fusion breakdown the original query into multiple sub and alternative queries to cover different interpretations and subtopics in several contents [10]. Similarly, GMR also focus on user queries with multiple hops, but it use reasoning chains to generate step by step modeling to retrieve the relevant information [9]. 
+
+**The Retriever**
+
+ After that, the retriever need to match user's input queries to relevant products from the chunks. For this task, understanding user intent and comprehensive products and offers knowledge are essential. To improve the understanding of user intent, we can adopt method from some researches such as RQ-RAG [5], GMR [9] and RAG-Fusion [10]. RQ-RAG improve user intent by rewriting, decomposition and disambiguation to have a clearer query before the retrieval process [5]. On the other hand, RAG-fusion breakdown the original query into multiple sub and alternative queries to cover different interpretations and subtopics in several contents [10]. Similarly, GMR also focus on user queries with multiple hops, but it use reasoning chains to generate step by step modeling to retrieve the relevant information [9]. 
+
+**The Generator**
+
+A generator is optional for the product search system where only natural language generation is not required. However, it is essential for the chatbot based product search system which can act as a sales person. The main task of a generator is to output an answer that is relevant to the query and grounded in the retrieved products and offer data. To ensure that we can adopt proven methods from current research using self-reflection, verification, correction, revisiting and refining  [4], [11]. 
+
 ### Dataset
 - Current E-commerce have 2 million product and 14 million offer data which will be the main external datasource to be retrieved by RAG system.
+- In addition, we can integrate the external knowledge about the product such as amazon, google, and user reviews to expand the products' knowledge base [7]. 
 - Then, we can create vector representation of all data to be ready for the retrieval process. 
 - We can store those information separate from the main data source. 
 - Then, create a benchmark if we have user previous query logs and expand it with synthetic queries and answers for each product and offer using LLM [8].
@@ -92,7 +103,6 @@ A model to classify each user queries into the following categories.
 ### Conduct a critical assessment of commercial solutions (e.g. Google Vertex AI Agent Builder) to benchmark against the proposed solution. 
 
 
-
 [1] C. Sharma, “Retrieval-Augmented Generation: A Comprehensive Survey of Architectures, Enhancements, and Robustness Frontiers,” May 28, 2025, arXiv: arXiv:2506.00054. doi: 10.48550/arXiv.2506.00054.
 [2] F. Sun et al., “A Product-Aware Query Auto-Completion Framework for E-Commerce Search via Retrieval-Augmented Generation Method,” 2024.
 [3] K. Guan, Q. Cao, Y. Sun, X. Wang, and R. Song, “BSharedRAG: Backbone Shared Retrieval-Augmented Generation for the E-commerce Domain,” Sept. 30, 2024, arXiv: arXiv:2409.20075. doi: 10.48550/arXiv.2409.20075.
@@ -103,6 +113,8 @@ A model to classify each user queries into the following categories.
 [8] J. Saad-Falcon, O. Khattab, C. Potts, and M. Zaharia, “ARES: An Automated Evaluation Framework for Retrieval-Augmented Generation Systems,” Mar. 31, 2024, arXiv: arXiv:2311.09476. doi: 10.48550/arXiv.2311.09476.
 [9] Z. Rackauckas, “RAG-Fusion: a New Take on Retrieval-Augmented Generation,” IJNLC, vol. 13, no. 1, pp. 37–47, Feb. 2024, doi: 10.5121/ijnlc.2024.13103.
 [10] H. Lee, S. Yang, H. Oh, and M. Seo, “Generative Multi-hop Retrieval,” Oct. 16, 2022, arXiv: arXiv:2204.13596. doi: 10.48550/arXiv.2204.13596.
+[11] X. Cheng, D. Luo, X. Chen, L. Liu, D. Zhao, and R. Yan, “Lift Yourself Up: Retrieval-augmented Text Generation with Self-Memory”.
+
 
 
 
