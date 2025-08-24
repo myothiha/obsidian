@@ -18,13 +18,21 @@ In order to make sure the product is practical and suable in the real world cont
 4. Assess whether external LLM services can be used cost-effectively at scale.
 5. Implement a hybrid architecture combining traditional search for short queries and LLMs for longer ones for efficient computation. 
 6. **Conduct a critical assessment of commercial solutions (e.g. Google Vertex AI Agent Builder) to benchmark against the proposed solution.** 
-# Background
+# State of the Art Analysis
 
-RAG systems involve two main components: a retriever and a generator. When a user provide a complete / partial query, a retriever extract knowledge from the sources that is relevant to the input and provide it to the LLM to generate answer to the query [1]. Depending on those component, RAG researches have four directions in general: retriever oriented, generator oriented, hybrid and robustness oriented approaches.  Retriever oriented RAG system focus on optimizing the retriever part of the system by refining input query, enhancing retriever architecture, filtering irrelevant information from the passive, and compressing long information into compact efficient representation. 
+RAG systems involve two main components: a retriever and a generator. When a user provide a complete / partial query, a retriever extract knowledge from the sources that is relevant to the input and provide it to the LLM to generate answer to the query [1]. Depending on those components, RAG researches have four directions in general: retriever oriented, generator oriented, hybrid and robustness oriented approaches.  Retriever oriented RAG system focus on optimizing the retriever part of the system by refining input query , enhancing retriever architecture, filtering irrelevant information from the passive, and compressing long information into compact efficient representation. 
 
-Similarly, generator based RAG system focus on generator part. The common pattern involve Faithfulness awareness decoding, context compression, utility filtering and generation control [1].  They improve RAG generator by refining model's output, making sure the output is grounded in the retrieved passage, compressing retriever output so that it fit the context window of LLM, adjust reranking based on the task so that only knowledge relevant to the task is remained. 
+Similarly, generator based RAG system focus on generator part. The common pattern involve Faithfulness awareness decoding, context compression, utility filtering and generation control [1].  They improve RAG generator by refining model's output [4], making sure the output is grounded in the retrieved passage, compressing encoder output across retrieved passages so that it fit the context window of LLM, adjust reranking based on the type task, retrieval metadata and agentic decision making so that only knowledge relevant to the task is remained. 
+
+On the other hand, hybrid RAG systems involve both retriever and generator. Instead of treating them as individual components, they focus on the coordinating between the two components. The trends of developing hybrid RAG systems involves iterating between the retriever and generator to perform continuous evidence and answer refinement, applying reinforce-based gradients to adapt both components, implementing dynamic retrieval mechanism during the generation uncertainty [1]. 
+
+Finally, robustness and security-oriented RAG systems focus on improving robustness against irrelevant or misleading context, detecting incorrect or hallucinating information in the generation, and preventing semantic backdoors attacks trigged by intentionally passages to prevent possible security compromise [1]. 
+
+In E-commerce setting, there are limited research 
 
 # Propose Approach
+
+In this section,  several methods will be proposed to achieve the to objectives of the research. 
 
 # Dataset
 
@@ -35,12 +43,14 @@ We need to evaluate perform several evaluation on different components and diffe
 2. Efficiency: evaluate average response times and energy consumption for the queries. 
 3. Robustness: check the noise tolerance of the proposed system.
 4. Cost & Throughput: Euro per 1k queries, tokens/query for paid LLMs. 
-5. 
 
 
 [1] C. Sharma, “Retrieval-Augmented Generation: A Comprehensive Survey of Architectures, Enhancements, and Robustness Frontiers,” May 28, 2025, arXiv: arXiv:2506.00054. doi: 10.48550/arXiv.2506.00054.
 [2] F. Sun et al., “A Product-Aware Query Auto-Completion Framework for E-Commerce Search via Retrieval-Augmented Generation Method,” 2024.
 [3] K. Guan, Q. Cao, Y. Sun, X. Wang, and R. Song, “BSharedRAG: Backbone Shared Retrieval-Augmented Generation for the E-commerce Domain,” Sept. 30, 2024, arXiv: arXiv:2409.20075. doi: 10.48550/arXiv.2409.20075.
+[4] Akari Asai, Zeqiu Wu, Yizhong Wang, Avirup Sil, and Hannaneh Hajishirzi. 2024. Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection. In The Twelfth International Conference on Learning Representations. https://openreview.net/forum?id=hSyW5go0v8
+[5] Chi-Min Chan, Chunpu Xu, Ruibin Yuan, Hongyin Luo, Wei Xue, Yike Guo, and Jie Fu. 2024. RQ-RAG: Learning to Refine Queries for Retrieval Augmented Generation. In First Conference on Language Modeling. https://openreview.net/forum?id=tzE7VqsaJ4
+
 
 
 
