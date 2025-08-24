@@ -38,6 +38,22 @@ The third is a graph-based RAG framework [7], which constructs an item–feature
 
 In this section,  several methods will be proposed to achieve the to objectives of the research. 
 
+Most e-commerce systems use one or more database management system such as MySQL, Oracle, MongoDB or Neo4J to store their products and offers data. For a simple search system like matching user's input queries to relevant products will heavily rely on the retriever of the RAG system. However, since the result will be 
+
+Depending on the products data format, we propose several retrieval and response system.
+1. Most e-commerce systems use one or more database management system such as MySQL, Oracle, MongoDB or Neo4J to store their products and offers data.
+
+Ensure 300 milli seconds or less response time for each user query.
+
+Minimize energy consumption  when deploying in-house LLM.
+
+Assess whether external LLM services can be used cost-effectively at scale.
+
+
+Implement a hybrid architecture combining traditional search for short queries and LLMs for longer ones for efficient computation. 
+
+
+**Conduct a critical assessment of commercial solutions (e.g. Google Vertex AI Agent Builder) to benchmark against the proposed solution.** 
 # Dataset
 
 # Evaluation
