@@ -42,7 +42,7 @@ In this section,  several methods will be proposed to achieve the to objectives 
 
  First, the retriever need to match user's input queries to relevant products. For this tasking, understanding user intent and comprehensive products and offers knowledge are essential. To improve the understanding of user intent, current researches have proposed many methods such as RQ-RAG [5], GMR and RAG-Fusion. RQ-RAG improve user intent by rewriting, decomposition and disambiguation to have a clearer query before the retrieval process. On the other hand, RAG-fusion breakdown the original query into multiple sub and alternative queries to cover different interpretations and subtopics in several contents. Similarly, GMR also focus on user queries with multiple hops, but it use reasoning chains to generate step by step modeling to retrieve the relevant information.
 
-To measure the ability of the proposed Syste
+To measure the ability of the proposed system generate response that is relevant to the internal product and offer data, we need to build a synthetic queries and response leveraging the existing external products and offers data. 
 
 Most e-commerce systems use one or more database management system such as MySQL, Oracle, MongoDB or Neo4J to store their products and offers data.
 
