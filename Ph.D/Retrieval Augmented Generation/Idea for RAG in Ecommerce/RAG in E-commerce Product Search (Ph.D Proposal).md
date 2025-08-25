@@ -34,6 +34,8 @@ The first is ProductRAG by Amazon Research [2], a framework designed to improve 
 
 The third is a graph-based RAG framework [7], which constructs an item–feature knowledge graph from user reviews and integrates it into the retrieval process. By leveraging graph traversal to explore both explicit and implicit item–feature connections, this framework enhances the diversity, fidelity, and contextual grounding of generated product descriptions. Together, these studies represent the most relevant and reputable RAG approaches for e-commerce to date, but they also reveal gaps in efficiency, scalability, and evaluation that our work seeks to address.
 
+We also have to focus on minimizing energy consumption of using LLM. Current research in the energy consumption of large language models (LLMs) during inference has rapidly evolved. 
+Especially, the popular approaches are vLLM with PagedAttention to reduces memory fragmentation and GPU utilization, speculative decoding, and adaptive GPU frequency adjustment [12]. There are also hardware oriented solutions, throttLL'eM dynamically modulate GPU speed 
 # Propose Approach
 
 In this section,  several methods will be proposed to achieve the to objectives of the research. 
@@ -114,6 +116,7 @@ A model to classify each user queries into the following categories.
 [9] Z. Rackauckas, “RAG-Fusion: a New Take on Retrieval-Augmented Generation,” IJNLC, vol. 13, no. 1, pp. 37–47, Feb. 2024, doi: 10.5121/ijnlc.2024.13103.
 [10] H. Lee, S. Yang, H. Oh, and M. Seo, “Generative Multi-hop Retrieval,” Oct. 16, 2022, arXiv: arXiv:2204.13596. doi: 10.48550/arXiv.2204.13596.
 [11] X. Cheng, D. Luo, X. Chen, L. Liu, D. Zhao, and R. Yan, “Lift Yourself Up: Retrieval-augmented Text Generation with Self-Memory”.
+[12] J. Fernandez, C. Na, V. Tiwari, Y. Bisk, S. Luccioni, and E. Strubell, “Energy Considerations of Large Language Model Inference and Efficiency Optimizations,” 2025, arXiv. doi: 10.48550/ARXIV.2504.17674.
 
 
 
