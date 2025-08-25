@@ -111,13 +111,35 @@ The proposed query classification step routes simple keyword queries directly to
 ### Conduct a critical assessment of commercial solutions (e.g. Google Vertex AI Agent Builder) to benchmark against the proposed solution. 
 
 Benchmarking experiments will run identical query sets across the proposed RAG system and commercial platforms, comparing relevance, latency, energy consumption, robustness, and cost. This comparison will highlight whether the proposed system provides measurable improvements in efficiency, scalability, and result quality compared to commercial alternatives.
+
+
+## Expected Work and Publication Timeline
+
+Year 1 (2026): Literature Review, Dataset Development, and RAG Retrieval
+
+Year 2 (2027): Hybrid RAG Architecture, Query Classification, and Data Chunking
+
+Year 3 (2028): Energy and Latency Optimization, Full RAG Framework, and Comprehensive Evaluation.
+
+Target Venues:
+- CIKM (submission: May)
+- NeurIPS (submission: May)
+- AAAI (submission: August)
+- WWW (submission: October)
+Alternative Venues:
+- ACL (submission: February)
+- SIGIR (submission: January)
+- ECIR (submission: October)
+- WSDM (submission: August)
+
+
 # References
 
 [1] C. Sharma, “Retrieval-Augmented Generation: A Comprehensive Survey of Architectures, Enhancements, and Robustness Frontiers,” May 28, 2025, arXiv: arXiv:2506.00054. doi: 10.48550/arXiv.2506.00054.
 [2] F. Sun et al., “A Product-Aware Query Auto-Completion Framework for E-Commerce Search via Retrieval-Augmented Generation Method,” 2024.
 [3] K. Guan, Q. Cao, Y. Sun, X. Wang, and R. Song, “BSharedRAG: Backbone Shared Retrieval-Augmented Generation for the E-commerce Domain,” Sept. 30, 2024, arXiv: arXiv:2409.20075. doi: 10.48550/arXiv.2409.20075.
-[4] Akari Asai, Zeqiu Wu, Yizhong Wang, Avirup Sil, and Hannaneh Hajishirzi. 2024. Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection. In The Twelfth International Conference on Learning Representations. https://openreview.net/forum?id=hSyW5go0v8
-[5] Chi-Min Chan, Chunpu Xu, Ruibin Yuan, Hongyin Luo, Wei Xue, Yike Guo, and Jie Fu. 2024. RQ-RAG: Learning to Refine Queries for Retrieval Augmented Generation. In First Conference on Language Modeling. https://openreview.net/forum?id=tzE7VqsaJ4
+[4] A. Asai, Z. Wu, Y. Wang, A. Sil, and H. Hajishirzi, “Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection,” Oct. 17, 2023, arXiv: arXiv:2310.11511. doi: 10.48550/arXiv.2310.11511.
+[5] C.-M. Chan et al., “RQ-RAG: Learning to Refine Queries for Retrieval Augmented Generation,” Mar. 31, 2024, arXiv: arXiv:2404.00610. doi: 10.48550/arXiv.2404.00610.
 [6] M. Tsagkias, T. H. King, S. Kallumadi, V. Murdock, and M. De Rijke, “Challenges and research opportunities in eCommerce search and recommendations,” SIGIR Forum, vol. 54, no. 1, pp. 1–23, June 2020, doi: 10.1145/3451964.3451966.
 [7] J. Yang, Y. Jia, C. Yang, Y. Liang, and L. Lin, “Boosting E-commerce Content Diversity: A Graph-based RAG Approach with User Reviews,” in Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2, Toronto ON Canada: ACM, Aug. 2025, pp. 3495–3506. doi: 10.1145/3711896.3736864.
 [8] J. Saad-Falcon, O. Khattab, C. Potts, and M. Zaharia, “ARES: An Automated Evaluation Framework for Retrieval-Augmented Generation Systems,” Mar. 31, 2024, arXiv: arXiv:2311.09476. doi: 10.48550/arXiv.2311.09476.
