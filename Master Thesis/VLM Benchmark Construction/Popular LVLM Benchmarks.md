@@ -13,6 +13,6 @@ They are in exam formats: question and answer. The questions types are
 - Multiple choice.
 - Open Answer.
 
-
 [[@liSurveyStateArt2025]]
+
 
