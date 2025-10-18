@@ -33,3 +33,16 @@ They create test to check if language models can really read tables like human.
 - Test 2: we remove the column separator of the missing cell also, and ask the same question, like in Figure 6 (Right). This is a common situation in CSV parsing that can be challenging like in the following image.
 
 ![[simple_table_reading_test.png]]
+
+## Dataset
+
+Our approach: Synthesis-then-Augment. We therefore propose a “synthesize-then-augment” approach to create diverse table-tasks using real tables as listed in Table 2, which can be used as training data to demonstrate the desirable behavior on tables for language models.
+
+The main steps of our synthesize-then-augment approach is shown in Algorithm 1. First, we sample a table T ∈ C from a large corpus of real tables C, and a type of table-task S ∈ S. From the (T , S) pair, we synthesize an instance of a table-task t = (Ins,T , C) (Line 3), which is the tasksynthesis step we will describe in detail in Section 4.2. From the set of diverse instances of tabletasks created (Ins,T , C), we then proceed to “augment” the tasks, at instruction/table/completion levels (Line 6-8), which is the step that we will describe in Section 4.3. The resulting table-tasks A = {(Ins′,T ′, C′)} become the training data we use for table-tuning.
+
+Two methods are used
+
+1. Synthesize new types of table-tasks for task diversity.
+2. Synthesize new table test-cases of existing tables ta
+
+![[Screenshot 2025-10-18 at 10.45.50 PM.png]]
