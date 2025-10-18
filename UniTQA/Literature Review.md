@@ -1,6 +1,6 @@
 
 ## TableGPT
-[[@liTableGPTTableFinetuned2024]]
+[[@TableGPT2024]]
 ## Problem Domain
 
 [TableGPT] LLM are trained mainly on texts which are

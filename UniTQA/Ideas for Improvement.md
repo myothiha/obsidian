@@ -20,6 +20,10 @@ It is used in [TURL] and mentioned by [TableGPT]
 
 ## Use a metadata table lookup to reduce the input prompt size? (instead of all metadata for all column.) May be we can only add related column.
 
+## Metadata Tuning  
+
+- Create dataset like [[@TableGPT2024]], but not table content but metadata. completion will also be a programming code. 
+- Therefore, instruction | metadata | completion.
 
 
 
