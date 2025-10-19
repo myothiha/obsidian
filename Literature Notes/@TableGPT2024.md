@@ -40,10 +40,10 @@ Our approach: Synthesis-then-Augment. We therefore propose a “synthesize-then-
 
 The main steps of our synthesize-then-augment approach is shown in Algorithm 1. First, we sample a table T ∈ C from a large corpus of real tables C, and a type of table-task S ∈ S. From the (T , S) pair, we synthesize an instance of a table-task t = (Ins,T , C) (Line 3), which is the tasksynthesis step we will describe in detail in Section 4.2. From the set of diverse instances of tabletasks created (Ins,T , C), we then proceed to “augment” the tasks, at instruction/table/completion levels (Line 6-8), which is the step that we will describe in Section 4.3. The resulting table-tasks A = {(Ins′,T ′, C′)} become the training data we use for table-tuning.
 
-Two methods are used
+### Two methods are used
 
-1. Synthesize new types of table-tasks for **task diversity**.
-2. Synthesize new table test-cases of existing tables-tasks for **data-diversity**.
+1. Synthesize new types of table-tasks for **task diversity**: which means creating new table tasks that does not exist in current table benchmarks.
+2. Synthesize new table test-cases of existing tables-tasks for **data-diversity**: extend table variety of current existing tasks.
 
 ![[Screenshot 2025-10-18 at 10.45.50 PM.png]]
 ## Table Tasks
