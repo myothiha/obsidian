@@ -45,8 +45,6 @@ Two methods are used
 1. Synthesize new types of table-tasks for **task diversity**.
 2. Synthesize new table test-cases of existing tables-tasks for **data-diversity**.
 
-
-
 ![[Screenshot 2025-10-18 at 10.45.50 PM.png]]
 ## Table Tasks
 
