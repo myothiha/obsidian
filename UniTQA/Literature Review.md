@@ -1,12 +1,2 @@
 
-## TableGPT
-[[@TableGPT2024]]
-## Problem Domain
-
-[TableGPT] LLM are trained mainly on texts which are
-1. one directional
-2. Read left to right
-3. Swapping two tokens will usually change the meaning of the text.
-
-Encoder Style Language Models for Table Tasks such as TURL, TaBERT, Ditto, Doduo perform well on various classification-oriented table tasks. However, they are not able to perform generative table tasks such as NL-2-SQL or TableQA given the encoder style nature of their base models. 
-
+[[@TableGPT2024]] proposed a table-tuning approach to fine-tune a vanilla language model on a diverse range of table-related tasks. They introduced 18 table tasks and demonstrated that fine-tuning GPT on varied table tasks, structures, and instructions significantly enhances the model’s ability to understand table content, achieving higher performance compared to models without table-tuning.
