@@ -6,6 +6,18 @@ Create a user named `john` with a non-interactive shell on `App Server 1`.
 ---
 # Solution
 
+### Quick recap
+
+1. Ensure `/sbin/nologin` exists.
+2. `useradd -m -s /sbin/nologin john` (create user with non-interactive shell).
+3. _(Optional)_ `passwd -l john` (lock password) — **skip for now** if you plan to test with a temporary password.
+4. `passwd john` (set temporary password) → _(unlock first with `passwd -u john` if needed)_.
+5. `grep john /etc/passwd` (confirm shell).
+6. `su - john` (verify it’s blocked by `nologin`).
+7. `passwd -l john` (lock again) **or** `passwd -d john` (delete password; less safe).
+8. `getent passwd john` (optional verification).
+
+---
 ### 1 - Confirm a non-interactive shell exists
 
 `ls -l /sbin/nologin /usr/sbin/nologin /bin/false 2>/dev/null`
@@ -117,13 +129,3 @@ Output should again end with `/sbin/nologin`.
 
 ---
 
-### Quick recap
-
-1. Ensure `/sbin/nologin` exists.
-2. `useradd -m -s /sbin/nologin john` (create user with non-interactive shell).
-3. _(Optional)_ `passwd -l john` (lock password) — **skip for now** if you plan to test with a temporary password.
-4. `passwd john` (set temporary password) → _(unlock first with `passwd -u john` if needed)_.
-5. `grep john /etc/passwd` (confirm shell).
-6. `su - john` (verify it’s blocked by `nologin`).
-7. `passwd -l john` (lock again) **or** `passwd -d john` (delete password; less safe).
-8. `getent passwd john` (optional verification).
