@@ -22,11 +22,11 @@ Testset: 1998
 
 ## FeTaQA
 
-| Model Name                       | ROUGE-1 | ROUGE-2 | Dataset | Trainset | Testset | Ref            |
-| -------------------------------- | ------- | ------- | ------- | -------- | ------- | -------------- |
-| ReActTable<br>(code-davinci-002) | 0.71    | 0.46    | FeTaQA  | 7,326    | 2,006   | ReActTable     |
-| Chain of Table<br>(PALM2?)       | 0.66    | 0.44    | FeTaQA  | 7,326    | 2,006   | Chain Of Table |
-| Teacher Guidance                 | 0.7     | 0.5     | FeTaQA  | 7,326    | 2,006   |                |
+| Model Name                       | ROUGE-1 | ROUGE-2 | Dataset | Trainset | Testset | Ref                                 |
+| -------------------------------- | ------- | ------- | ------- | -------- | ------- | ----------------------------------- |
+| ReActTable<br>(code-davinci-002) | 0.71    | 0.46    | FeTaQA  | 7,326    | 2,006   | ReActTable                          |
+| Chain of Table<br>(PALM2?)       | 0.66    | 0.44    | FeTaQA  | 7,326    | 2,006   | Chain Of Table                      |
+| Teacher Guidance                 | 0.7     | 0.5     | FeTaQA  | 7,326    | 2,006   | [[@yangEnhancingFreeFormTable2025]] |
 
 ## Performance
 
