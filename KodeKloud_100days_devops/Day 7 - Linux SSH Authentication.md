@@ -25,6 +25,17 @@ After setup, you should be able to run:
 from the **jump host** without entering a password.
 
 ---
+## ✅ **Summary**
+
+| Step | Command                                                 | Description                                   |
+| ---- | ------------------------------------------------------- | --------------------------------------------- |
+| 1    | `ssh thor@jump_host.stratos.xfusioncorp.com`            | Connect to Jump Host                          |
+| 2    | `ssh-keygen -t rsa -b 4096`                             | Create SSH key pair                           |
+| 3    | `ssh-copy-id -i ~/.ssh/id_rsa.pub user@server`          | Copy key to each app server                   |
+| 4    | `ssh user@server`                                       | Verify password-less login                    |
+| 5    | `chmod 700 ~/.ssh` & `chmod 600 ~/.ssh/authorized_keys` | only if you're still seeing password prompts. |
+
+---
 
 ## 🧩 **Step 1 — Log in to the Jump Host**
 
@@ -96,7 +107,6 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub tony@stapp01.stratos.xfusioncorp.com
 When prompted for each server:
 
 - Enter the respective sudo user’s password:
-    
     - `tony` → `Ir0nM@n`
     - `steve` → `Am3ric@`
     - `banner` → `BigGr33n`
@@ -113,25 +123,25 @@ When prompted for each server:
 From the jump host (`thor`):
 
 ```
-ssh tony@stapp01.stratos.xfusioncorp.com 
+ssh tony@stapp01.stratos.xfusioncorp.com
 exit
 ```
+
 ```
-ssh steve@stapp02.stratos.xfusioncorp.com 
-exit 
+ssh steve@stapp02.stratos.xfusioncorp.com
+exit
 ```
+
 ```
-ssh banner@stapp03.stratos.xfusioncorp.com exit
+ssh banner@stapp03.stratos.xfusioncorp.com
+exit
 ```
 
 ✅ Expected:
 
 - No password prompt appears.
-    
 - You log in directly.
-    
 - You can exit cleanly.
-    
 
 ---
 
@@ -139,11 +149,15 @@ ssh banner@stapp03.stratos.xfusioncorp.com exit
 
 If you still get password prompts, log in manually with password once and check:
 
-`ls -ld ~/.ssh ls -l ~/.ssh/authorized_keys`
+```
+ls -ld ~/.ssh ls -l ~/.ssh/authorized_keys
+```
 
 Then fix permissions:
 
-`chmod 700 ~/.ssh chmod 600 ~/.ssh/authorized_keys`
+```
+chmod 700 ~/.ssh chmod 600 ~/.ssh/authorized_keys
+```
 
 ### Explanation:
 
@@ -158,18 +172,11 @@ Then fix permissions:
 
 From jump host, test one full chain:
 
-`ssh tony@stapp01.stratos.xfusioncorp.com sudo -l`
+```
+ssh tony@stapp01.stratos.xfusioncorp.com 
+sudo -l
+```
 
 You should see a list of allowed sudo commands (confirming the user is a sudoer).
 
 ---
-
-## ✅ **Summary**
-
-|Step|Command|Description|
-|---|---|---|
-|1|`ssh thor@jump_host.stratos.xfusioncorp.com`|Connect to Jump Host|
-|2|`ssh-keygen -t rsa -b 4096`|Create SSH key pair|
-|3|`ssh-copy-id -i ~/.ssh/id_rsa.pub user@server`|Copy key to each app server|
-|4|`ssh user@server`|Verify password-less login|
-|5|`chmod 700 ~/.ssh` & `chmod 600 ~/.ssh/authorized_keys`|
