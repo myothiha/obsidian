@@ -48,5 +48,11 @@ Query: "Apple"
 1. 138 click on Electronic
 2. 3 clicks on Food 
 
+How about we do a hybrid approach?
+
+Query: "Apple"
+1. Intent: Electronic category.
+2. 
+
 
 
