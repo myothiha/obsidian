@@ -25,5 +25,28 @@ Reference: [[@sharmaRetrievalAugmentedGenerationComprehensive2025]]
 
 # Related Works
 
-[[@linEcommerceProductQuery2018]]
+
+## Build Dataset
+
+[[@linEcommerceProductQuery2018]] create a user intent classification dataset using customer click. It is a multi-label annotations where same queries with different user intention. Therefore, we will have a dataset where each keyword will link to different products. 
+
+For example,
+
+Query: "Apple"
+
+1. 25 click Macbook
+2. 100 click Iphone
+3. 13 click Apple Watch
+4. 2 clicks Apple Vinegar
+5. 1 click Apple Pie.
+
+As you can see, popular products have a lot of clicks and non-popular have sparse data. In that case combine those sparse data with their parent node (categories in that case.) 
+
+We can even do the same for popular products.
+
+Query: "Apple"
+1. 138 click on Electronic
+2. 3 clicks on Food 
+
+
 
