@@ -12,3 +12,7 @@ Reference: [[@sharmaRetrievalAugmentedGenerationComprehensive2025]]
 - How do we evaluate the performance?
 	- Any benchmark for user intent comprehension?
 	- If not, can we create our own benchmark?
+
+# Need to clarify
+- Is it going to be static? 
+- 
