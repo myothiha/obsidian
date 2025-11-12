@@ -5,4 +5,3 @@ We can use intent classification as part of Metadata Filtering or ranking the pr
 For example,
 
 "Apple" -> 1. Electronic
- 

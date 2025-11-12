@@ -12,6 +12,12 @@ Reference: [[@sharmaRetrievalAugmentedGenerationComprehensive2025]]
 - How do we evaluate the performance?
 	- Any benchmark for user intent comprehension?
 	- If not, can we create our own benchmark?
+- Generalizability problem
+	- Let's say we have a list of query -> intent mapping. 
+	- Are we gonna use keyword search, semantic search to match new query and existing knowledge query?
+	- Are we gonna merge semantically similar queries into a single one. 
+		- For example, Apple -> 100, Macbook -> 20. Then, Merge: Query: (Apple, Macbook) => 120 (frequencies?)
+	- 
 
 # Need to clarify
 - Is it going to be static? 
