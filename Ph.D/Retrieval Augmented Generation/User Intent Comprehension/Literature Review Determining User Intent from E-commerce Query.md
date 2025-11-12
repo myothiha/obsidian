@@ -15,4 +15,15 @@ Reference: [[@sharmaRetrievalAugmentedGenerationComprehensive2025]]
 
 # Need to clarify
 - Is it going to be static? 
-- 
+
+
+# Type of Queries
+
+- Head queries (generic queries)
+- Long Tail queries (specific queries)
+
+
+# Related Works
+
+[[@linEcommerceProductQuery2018]]
+
