@@ -65,3 +65,27 @@ Three Stage Rewriting Framework
 ## Increment Method
 
 ## Offline Feedback (System)
+
+- Simulate Taobao online system: rewrite -> products -> quality score (by system)
+- Rewriting module only operates on the inverted index matching of the retrieval module.
+- Three metrics to measure the quality of the rewrite.
+	- Relevance - How closely the retrieved products match the original intent of the query.
+	- Increment - Whether the rewrite helps retrieve additional relevant products not found by the original query.
+	- Hitrate - The ability of the rewrite to recover products that users have actually purchased but weren’t found by the original query.
+
+
+# Questions
+
+## What is the Increment Metric in Taobao's BEQUE Framework?
+
+The **increment metric** is one of the three custom-designed metrics (alongside "relevance" and "hitrate") used to evaluate how effective a rewritten query is at expanding the set of relevant products found during search, especially for long-tail (rare/specific) queries.
+
+### Main Idea:
+
+- **Goal:** Measure if the rewrite brings in new, relevant products that the original query did not retrieve, thus combating the "few-recall" problem (where a query returns very few results).
+
+### How It Works:
+
+- The system retrieves a product set for the original query (`Z_q`) and for the rewrite (`Z_rw`).
+- It also has a reference product set (`Z_ex`), which usually contains high-quality or curated products relevant to the query domain.
+- The increment score counts **how many products are in the rewrite's retrieval set (`Z_rw`) but not in the original query's retrieval set (`Z_q`), and that are also in the reference set (`Z_ex`)**.
