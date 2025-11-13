@@ -59,6 +59,8 @@ Query: "Apple"
 - Fast Text
 - Attention Based CNNs
 
+**Note: For multi-label multi-class classification setting, only linear SVM is used for experiment.**
+
 ## Attention Based CNNs
 
 - Train word2vec on the catalog product titles of clicked product associated with all the queries in the training data.

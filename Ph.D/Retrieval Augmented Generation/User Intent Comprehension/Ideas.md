@@ -5,3 +5,16 @@ We can use intent classification as part of Metadata Filtering or ranking the pr
 For example,
 
 "Apple" -> 1. Electronic
+
+# We need to have the dataset anyway
+
+- Without dataset, we will not have no control over what kind of product we want to show because different region have different customer preference and behavior.
+- We can use datasets to adapt the customer behavior overtime. 
+
+**With the fixed dataset, it's going to be static since the model rely on the pattern of the dataset.**
+## We need to find a complementary data source since our data source is not enough. 
+
+
+## Hybrid Approach
+
+We also need to implement hybrid approach where our dataset does not cover all the products. 
