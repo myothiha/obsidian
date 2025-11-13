@@ -16,6 +16,9 @@ For example,
 
 We also need to implement hybrid approach where our dataset does not cover all the products. 
 
+## Data Augmentation Approaches
+
+- Can we find effective data augmentation approach to improve comprehensiveness of current dataset?
 ## Hybrid Approach
 
 
