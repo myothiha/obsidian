@@ -59,9 +59,7 @@ Query: "Apple"
 
 # LLM-based Query Rewriting in E-commerce search
 
-
-
-
+Ref: [[@pengLargeLanguageModel2024]]
 
 
 

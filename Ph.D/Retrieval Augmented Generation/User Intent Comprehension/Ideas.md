@@ -14,7 +14,9 @@ For example,
 **With the fixed dataset, it's going to be static since the model rely on the pattern of the dataset.**
 ## We need to find a complementary data source since our data source is not enough. 
 
+We also need to implement hybrid approach where our dataset does not cover all the products. 
 
 ## Hybrid Approach
 
-We also need to implement hybrid approach where our dataset does not cover all the products. 
+
+
