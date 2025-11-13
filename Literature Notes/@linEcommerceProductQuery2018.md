@@ -49,3 +49,20 @@ Query: "Apple"
 - Then, associate product category labels to each query.
 
 **Assumption: users behavior is coherent with the selection of the retrieved product.**
+
+
+# Models
+
+- Logistic Regression
+- SVMs (Best: Single Label QC)
+- Gradient Boosting Trees (GBT)
+- Fast Text
+- Attention Based CNNs
+
+## Attention Based CNNs
+
+- Train word2vec on the catalog product titles of clicked product associated with all the queries in the training data.
+- Initial representation for attentional CNN is obtained from word2vec.
+- Tune hyper params by 5-fold cross validation on training set.
+
+

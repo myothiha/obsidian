@@ -5,6 +5,7 @@ Reference: [[@sharmaRetrievalAugmentedGenerationComprehensive2025]]
 
  We would like to comprehend user intention based on the user queries on e-commerce platform. Sometime, user queries can be ambiguous. For example, if a user search "Apple", should we show the food related product like apple pie, apple jam or electronic products like Macbook, iphone or apple watch. E-commerce platform like Amazon show the most popular products, in the case of "Apple", it shows Macbooks, iphones and Apple watches. So, we would like to create a AI-based retriever system, to discern the intention behind a user depending on current user market behavior and show the most relevant products to user. 
 
+There is also lack of customer dataset on many products (e.g. sparsity problem, long tail queries) which make it difficult to learn user intent.
 # Research Questions
 - How do we know current market behavior for each keyword?
 	- Is there any dataset?
@@ -58,7 +59,8 @@ How about we do a hybrid approach?
 
 Query: "Apple"
 1. Intent: Electronic category.
-2. 
+
+
 
 
 
