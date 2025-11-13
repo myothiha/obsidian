@@ -23,3 +23,6 @@ We also need to implement hybrid approach where our dataset does not cover all t
 
 
 
+## Develop E-commerce specialized LLM Task
+
+Train or Fine-tined LLM with a large variety of E-commerce task to have general purpose E-commerce LLM. 

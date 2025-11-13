@@ -27,6 +27,7 @@ Perform Preference Alignment with RL, rejection sample like methods, contrastive
 
 # Dataset
 
+### SFT Dataset
 - construct a multi-instructions **SFT dataset with online logs that focuses on rewriting tasks.**
 - Mixed with quality classification, query correction and chain of thought to train LLMs specialized in E-commerce query rewriting.
 - Initial source: Taobao old rewriting policy (lack optimization for long-tail queries). select top ranked y1 as gold standard to construct initial rewriting dataset D.
@@ -36,17 +37,31 @@ Perform Preference Alignment with RL, rejection sample like methods, contrastive
 
 Notes:
 - semantic similarity between query and rewrite does not guarantee similar set of products.
-# Method
+
+### Auxiliary Task Datasets
+1. Quality classification task
+	1. Query pair from online logs
+	2. Human annotations to determine if they meet data requirements specified for SFT.
+2. Product title prediction task
+	1. Choose the most recent interacted product under the query and form <query, product title> pairs.
+3. CoT Task
+	1. Human evaluators write "query rewrites" for original online queries.
+	2. They also need to write their thought process for each "rewrites".
+
+Note: Those task data are integrated into the rewriting task to form the final dataset. 
+## Method
 
 Three Stage Rewriting Framework
 1. Construct Multi-instructions dataset
 2. Use LLM from stage 1 to generate candidate rewrites for each sample query.
 3. Use contrastive learning, to maximize the probability of rewrites that can obtain the desired search results.
 
-# Relevant Filter
+## Relevant Filter
 - Ensure products retrieve two semantically similar queries are highly relevant.
 - Why? Initial Rewrites are head queries (generic). Then, expand semantic those rewrites while maintaining high relevance.
 - By this way, we got long tail queries. 
 - Alleviate "few-recall" results of long tail queries.
 
-# Increment Method
+## Increment Method
+
+## Offline Feedback (System)
