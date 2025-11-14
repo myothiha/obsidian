@@ -57,9 +57,15 @@ How about we do a hybrid approach?
 Query: "Apple"
 1. Intent: Electronic category.
 
-However, **sQuIrRel** [[@tigunovaSQuIrRelLargeScaleEvaluation2025]] think that users clicks are noisy,  and unreliable and also suffer from exposure bias, trends and seasonality. Therefore, it use **pre-trained high-precision relevance model** which classify <query, product> pairs into 4 categories: exact, substitute, complement, or irrelevant. Only exact matched pairs are keep for the sQuIrRel dataset. During their dataset construction, they use queries and the list of all products that are return to the customer. However, completely ignoring and highly reliance on the relevant model might ignore customer behavior and interest. In additional, they remove generic queries that associated with multi-product types to ensure a single correct set of labels for a queries. However, in real world use case, customers might still use generic t
+However, **sQuIrRel** [[@tigunovaSQuIrRelLargeScaleEvaluation2025]] think that users clicks are noisy,  and unreliable and also suffer from exposure bias, trends and seasonality. Therefore, it use **pre-trained high-precision relevance model** which classify <query, product> pairs into 4 categories: exact, substitute, complement, or irrelevant. Only exact matched pairs are keep for the sQuIrRel dataset. During their dataset construction, they use queries and the list of all products that are return to the customer. However, completely ignoring and highly reliance on the relevant model might ignore customer behavior and interest. In additional, they remove generic queries that associated with multi-product types to ensure a single correct set of labels for a queries. However, in real world use case, customers might still use generic terms to search.
+
+Using classifier fine-tuned on human labeled query item pairs sampled from real e-commerce data classifier
 
 (Idea: We can use a semantic or exact match retrieval model or LLM based reasoning to find the relevancy between the query and the product.)
+
+So the problem is 
+- Does customer click through data is really useless?
+- 
 
 # LLM-based Query Rewriting in E-commerce search (Taobao's BEQUE)
 
