@@ -1,3 +1,9 @@
+
+# Find Customer Intent Classification Models From E-commerce query
+
+Keyword For Google Scholar
+- Find Customer Intent Classification Models From E-commerce query
+
 # Service Dependencies
 
 - For a given query (e.g. "Olivier"), use Google Product Search for Current trend. 

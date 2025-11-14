@@ -57,9 +57,11 @@ How about we do a hybrid approach?
 Query: "Apple"
 1. Intent: Electronic category.
 
+However, **sQuIrRel** [[@tigunovaSQuIrRelLargeScaleEvaluation2025]] think that users clicks are noisy,  and unreliable and also suffer from exposure bias, trends and seasonality.
+
 # LLM-based Query Rewriting in E-commerce search (Taobao's BEQUE)
 
 Ref: [[@pengLargeLanguageModel2024]]
 
- BEQUE create <query, rewrites> instruction set to train a LLM that can rewrite a user query into more effective query rewrite. One advantages is that it works great with long tail queries. 
+ **BEQUE** create <query, rewrites> instruction set to train a LLM that can rewrite a user query into more effective query rewrite. It uses semantic query expansion while maintaining the same relevancy with the original query. One advantages is that it works great with long tail queries. 
 
