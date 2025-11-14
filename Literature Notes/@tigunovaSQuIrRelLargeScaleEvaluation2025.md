@@ -21,4 +21,8 @@ Query-to-Product Type (Q2PT) is a crucial e-commerce query understanding signal,
 
 ## Query Construction Process
 - Search logs: one query => a list of items => a list of (query, item) pairs
-- Use Relevance classifier for each pair. Only exact match pairs with co
+- Use Relevance classifier for each pair. Only exact match pairs with confidence score higher than 0.8.
+- Get product types for all items in each pair.
+- Discard product types where the number of its items are less than 3.
+- Discard product types that have less than 1/3 of exact match items. It remove products that are only moderately related to the query. Finally, choose only one product type per query.
+- 

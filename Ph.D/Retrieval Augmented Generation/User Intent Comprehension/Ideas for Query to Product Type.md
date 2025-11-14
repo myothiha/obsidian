@@ -1,3 +1,9 @@
+Query generation using product type.  
+# Summary
+
+Current Methods for Customer Intent Classification
+- **Query Rewrites Model** - it convert customer query into simpler form to make it easier to retrieve product types. It helps to retrieve products for long tail queries. [[@pengLargeLanguageModel2024]]
+- **Query to Product Types classification model** - trained on online search logs (query, products) to map queries into product types
 
 # Find Customer Intent Classification Models From E-commerce query
 
@@ -35,6 +41,10 @@ We also need to implement hybrid approach where our dataset does not cover all t
 ## Data Augmentation Approaches
 
 - Can we find effective data augmentation approach to improve comprehensiveness of current dataset?
+- Generate synthetic head and tail queries to expand the dataset.
+	- We can use user click though query log to expand that.
+	- head query (initial) -> expand -> tail query
+	- tail query (initial) -> break into several keywords (head queries) -> associate each 
 ## Hybrid Approach
 
 

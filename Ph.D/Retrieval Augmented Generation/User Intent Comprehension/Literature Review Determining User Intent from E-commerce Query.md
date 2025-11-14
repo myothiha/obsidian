@@ -57,15 +57,17 @@ How about we do a hybrid approach?
 Query: "Apple"
 1. Intent: Electronic category.
 
-However, **sQuIrRel** [[@tigunovaSQuIrRelLargeScaleEvaluation2025]] think that users clicks are noisy,  and unreliable and also suffer from exposure bias, trends and seasonality. Therefore, it use **pre-trained high-precision relevance model** which classify <query, product> pairs into 4 categories: exact, substitute, complement, or irrelevant. Only exact matched pairs are keep for the sQuIrRel dataset. During their dataset construction, they use queries and the list of all products that are return to the customer. However, completely ignoring and highly reliance on the relevant model might ignore customer behavior and interest. In additional, they remove generic queries that associated with multi-product types to ensure a single correct set of labels for a queries. However, in real world use case, customers might still use generic terms to search.
+However, **sQuIrRel** [[@tigunovaSQuIrRelLargeScaleEvaluation2025]] think that users clicks are noisy,  and unreliable and also suffer from exposure bias, trends and seasonality. Therefore, it use **pre-trained high-precision relevance model** which classify <query, product> pairs into 4 categories: exact, substitute, complement, or irrelevant. Only exact matched pairs are keep for the sQuIrRel dataset. During their dataset construction, they use queries and the list of all products that are return to the customer. However, completely ignoring and highly reliance on the relevant model might ignore customer behavior and interest. I agree that customer logs contains noisy data. But instead of discarding it completely. I propose to use customer logs filter by Classifier so that we keep both customer interest and product relevant. **So, how do we check if a product is not relevant to a query?**
 
-Using classifier fine-tuned on human labeled query item pairs sampled from real e-commerce data classifier
+sQuIrRel mentioned that inaccurate click-through labels is the result of the mismatch between the users' browsing intent and literal meaning of their query. Another one is customer changing their purchase intent while browsing the search results (opting for a cheaper type or lose interest after seeing the price or picture.) **Is it possible to detect such intent change?**
 
+In addition, for the irrelevant products filtered by the classifier still represent customer interest. **We can create query rewrites to create relevant query associated what those products to make it relevant.** That way we keep customer interest while making it relevant but it can be complicated since we are going to change the original query. 
+
+In additional, they remove generic queries that associated with multi-product types to ensure a single correct set of labels for a queries. However, in real world use case, customers might still use generic terms to search.
 (Idea: We can use a semantic or exact match retrieval model or LLM based reasoning to find the relevancy between the query and the product.)
 
 So the problem is 
-- Does customer click through data is really useless?
-- 
+- Is customer click through data really useless?
 
 # LLM-based Query Rewriting in E-commerce search (Taobao's BEQUE)
 
