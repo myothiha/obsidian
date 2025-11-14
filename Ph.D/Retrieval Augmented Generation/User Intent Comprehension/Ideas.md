@@ -1,3 +1,12 @@
+# Service Dependencies
+
+- For a given query (e.g. "Olivier"), use Google Product Search for Current trend. 
+- Then, get the top-k items (first 30 items) from Google Search put into a prompt and then ask Gemini to classify user intent. For example, Query: Olivier -> intent: tree.
+- Fetch products related to "olivier" and "tree" from our E-commerce (leclerc) database. 
+
+# Problems
+- If we rely on Google search, it's going to show the trend of considered by google instead of ours. For example, for "oliver" most customer bought wine and tree. But Google show only trees. I think we should only rely on outside source for queries that does not data in our system.
+
 # Use Metadata Filtering or ranking using the popular items. 
 
 We can use intent classification as part of Metadata Filtering or ranking the products from the retriever. For example, we can map user's query into product categories and use that information to filter or rank the product. 
@@ -12,6 +21,7 @@ For example,
 - We can use datasets to adapt the customer behavior overtime. 
 
 **With the fixed dataset, it's going to be static since the model rely on the pattern of the dataset.**
+
 ## We need to find a complementary data source since our data source is not enough. 
 
 We also need to implement hybrid approach where our dataset does not cover all the products. 
