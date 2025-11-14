@@ -6,6 +6,12 @@ Reference: [[@sharmaRetrievalAugmentedGenerationComprehensive2025]]
  We would like to comprehend user intention based on the user queries on e-commerce platform. Sometime, user queries can be ambiguous. For example, if a user search "Apple", should we show the food related product like apple pie, apple jam or electronic products like Macbook, iphone or apple watch. E-commerce platform like Amazon show the most popular products, in the case of "Apple", it shows Macbooks, iphones and Apple watches. So, we would like to create a AI-based retriever system, to discern the intention behind a user depending on current user market behavior and show the most relevant products to user. 
 
 There is also lack of customer dataset on many products (e.g. sparsity problem, long tail queries) which make it difficult to learn user intent.
+
+There are several issues for query to product type or user intent classification task:
+1. Ambiguity - General Queries can be associated with different product types. 
+2. Tail Queries - since specific detail queries does not have history data, there are very few relevant products to display. (low recall problem.)
+3. Dynamic Intent  - customer intent change after browsing the product list mismatching the query and associated products or influence by some irrelevant products showing on top.
+4. Cold Start Problem - new product categories lack customer behavior lead to poor performance (not showing up in the search.)
 # Research Questions
 - How do we know current market behavior for each keyword?
 	- Is there any dataset?

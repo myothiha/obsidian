@@ -4,6 +4,7 @@ Query generation using product type.
 Current Methods for Customer Intent Classification
 - **Query Rewrites Model** - it convert customer query into simpler form to make it easier to retrieve product types. It helps to retrieve products for long tail queries. [[@pengLargeLanguageModel2024]]
 - **Query to Product Types classification model** - trained on online search logs (query, products) to map queries into product types
+- **Product Ranking Model**
 
 # Find Customer Intent Classification Models From E-commerce query
 
