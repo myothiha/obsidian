@@ -10,18 +10,18 @@ Current SOTA small model: Llama3.1-8B of RoT but it's not peer reviewed.
 | ReActTable                 | 68.0%         | WikiTQ  | 14,149   | 4,344   | ReActTable, 2024     | Q1<br>Citations: 57 |
 | Llama3.3-70B               | 78.7%         | WikiTQ  | 14,149   | 4,344   | RoT, 2025            | Not Peer Reviewed   |
 | Chain of Table (PaLM2)     | 67.31%        | WikiTQ  | 14,149   | 4,344   | Chain of Table, 2024 | A*                  |
-| Denoiser TabDDR (ChatGPT4) | 76.96%        | WikiTQ  | 14,149   | 4,344   | [[@TabDDR]], 2025    | A*                  |
+| **Denoiser TabDDR (ChatGPT4)** | **76.96%**        | **WikiTQ**  | **14,149**   | **4,344**   | **[[@TabDDR]], 2025**    | **A***                  |
 ## TabFact Dataset
 
 Testset: 1998
 
-| Model Name                       | Test Accuracy | Dataset | Trainset | Testset | Ref          | Rank                |
-| -------------------------------- | ------------- | ------- | -------- | ------- | ------------ | ------------------- |
-| ReActTable                       | 86.1%         | TabFact | -        | 1,998   | ReActTable   | Q1<br>Citations: 57 |
-| Pasta                            | 90.8%         | TabFact | -        | 1,998   | ReActTable   | Q1<br>Citations: 57 |
-| Chain of Table (PaLM2)           | 86.61%        | TabFact | -        | 1,998   | ReActTable   | Q1<br>Citations: 57 |
-| Denoiser TabDDR (ChatGPT4)       | 93.29%        | TabFact | -        | 1,998   | [[@TabDDR]]  | A*                  |
-| RePanda (DeepSeek-coder-7B-inst) | 84.09 %       | TabFact |          | 1,998   | [[@Repanda]] | A*                  |
+| Model Name                       | Test Accuracy | Dataset     | Trainset | Testset   | Ref             | Rank                |
+| -------------------------------- | ------------- | ----------- | -------- | --------- | --------------- | ------------------- |
+| ReActTable                       | 86.1%         | TabFact     | -        | 1,998     | ReActTable      | Q1<br>Citations: 57 |
+| Pasta                            | 90.8%         | TabFact     | -        | 1,998     | ReActTable      | Q1<br>Citations: 57 |
+| Chain of Table (PaLM2)           | 86.61%        | TabFact     | -        | 1,998     | ReActTable      | Q1<br>Citations: 57 |
+| **Denoiser TabDDR (ChatGPT4)**   | **93.29%**    | **TabFact** | **-**    | **1,998** | **[[@TabDDR]]** | **A***              |
+| RePanda (DeepSeek-coder-7B-inst) | 84.09 %       | TabFact     |          | 1,998     | [[@Repanda]]    | A*                  |
 
 ## WikiFact Dataset
 
