@@ -17,7 +17,7 @@ Keyword For Google Scholar
 - Then, get the top-k items (first 30 items) from Google Search put into a prompt and then ask Gemini to classify user intent. For example, Query: Olivier -> intent: tree.
 - Fetch products related to "olivier" and "tree" from our E-commerce (leclerc) database. 
 
-# Problems
+### Problems
 - If we rely on Google search, it's going to show the trend of considered by google instead of ours. For example, for "oliver" most customer bought wine and tree. But Google show only trees. I think we should only rely on outside source for queries that does not data in our system.
 
 # Use Metadata Filtering or ranking using the popular items. 
@@ -46,6 +46,8 @@ We also need to implement hybrid approach where our dataset does not cover all t
 	- We can use user click though query log to expand that.
 	- head query (initial) -> expand -> tail query
 	- tail query (initial) -> break into several keywords (head queries) -> associate each 
+	- new products (cold start problem) -> descriptions 
+	- 
 ## Hybrid Approach
 
 
@@ -53,3 +55,43 @@ We also need to implement hybrid approach where our dataset does not cover all t
 ## Develop E-commerce specialized LLM Task
 
 Train or Fine-tined LLM with a large variety of E-commerce task to have general purpose E-commerce LLM. 
+E-commerce Tasks
+- Query <-> product title, product type
+- Product Title <-> Product Type, Description, 
+- Product descriptions <-> reviews or sales
+
+# Product Embeddings
+
+- trained a embedding model for products or E-commerce terms 
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
