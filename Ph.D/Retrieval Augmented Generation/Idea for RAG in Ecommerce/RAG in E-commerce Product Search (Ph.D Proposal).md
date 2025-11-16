@@ -25,7 +25,7 @@ To ensure the proposed system is practical and usable in a real-world e-commerce
 7. Conduct a critical assessment of commercial solutions (e.g. Google Vertex AI Agent Builder) to benchmark against the proposed solution. 
 # State of the Art Analysis
 
-RAG systems involve two main components: a retriever and a generator. When a user provide a complete / partial query, a retriever extract knowledge from the sources that is relevant to the input and provide it to the LLM to generate answer to the query [1]. Depending on those components, RAG researches have four directions in general: retriever oriented, generator oriented, hybrid and robustness oriented approaches.  
+RAG systems involve two main components: a retriever and a generator. When a user provide a complete / partial query, a retriever extract knowledge from the sources that is relevant to the input and provide it to the LLM to generate answer to the query [1]. Depending on those components, RAG researches have four directions in general: retriever oriented, generator oriented, hybrid and robustness oriented approaches. 
 
 Retriever oriented RAG system focus on optimizing the retriever part of the system by refining input query , enhancing retriever architecture, filtering irrelevant information from the passive, and compressing long information into compact efficient representation [1]. 
 
