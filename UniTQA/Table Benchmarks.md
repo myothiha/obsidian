@@ -5,12 +5,12 @@ Trainset: 14,149
 
 Current SOTA small model: Llama3.1-8B of RoT but it's not peer reviewed.
 
-| Model Name                 | Test Accuracy | Dataset | Trainset | Testset | Ref                  | Rank                |
-| -------------------------- | ------------- | ------- | -------- | ------- | -------------------- | ------------------- |
-| ReActTable                 | 68.0%         | WikiTQ  | 14,149   | 4,344   | ReActTable, 2024     | Q1<br>Citations: 57 |
-| Llama3.3-70B               | 78.7%         | WikiTQ  | 14,149   | 4,344   | RoT, 2025            | Not Peer Reviewed   |
-| Chain of Table (PaLM2)     | 67.31%        | WikiTQ  | 14,149   | 4,344   | Chain of Table, 2024 | A*                  |
-| **Denoiser TabDDR (ChatGPT4)** | **76.96%**        | **WikiTQ**  | **14,149**   | **4,344**   | **[[@TabDDR]], 2025**    | **A***                  |
+| Model Name                     | Test Accuracy | Dataset    | Trainset   | Testset   | Ref                   | Rank                |
+| ------------------------------ | ------------- | ---------- | ---------- | --------- | --------------------- | ------------------- |
+| ReActTable                     | 68.0%         | WikiTQ     | 14,149     | 4,344     | ReActTable, 2024      | Q1<br>Citations: 57 |
+| Llama3.3-70B                   | 78.7%         | WikiTQ     | 14,149     | 4,344     | RoT, 2025             | Not Peer Reviewed   |
+| Chain of Table (PaLM2)         | 67.31%        | WikiTQ     | 14,149     | 4,344     | Chain of Table, 2024  | A*                  |
+| **Denoiser TabDDR (ChatGPT4)** | **76.96%**    | **WikiTQ** | **14,149** | **4,344** | **[[@TabDDR]], 2025** | **A***              |
 ## TabFact Dataset
 
 Testset: 1998
