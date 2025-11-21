@@ -11,7 +11,9 @@ I have a user click though data with the following format.
 We need a dataset with the following format to prepare fine-tune dataset.
 - reasoning language
 - system prompt (or developer)
-- user prompt
+- user prompt - we can have some variety in terms of
+	- inputs - different way to ask.
+	- output - different formats such as text, json and other.
 - reasoning step - that generated using google search or any other dataset we would like to align our model. 
 - final
 
@@ -19,5 +21,5 @@ Dataset Processing steps
 1. Transform each row of data into a pair of query: a list of product names.
 2. Use llm to generate reasoning between queries that will lead to choose the provided product names. 
 3. Use LLM to generate diverse system prompts.
-4. Use LLM to generate diverse user prompts. 
+4. Use LLM to generate diverse user prompts.
 
