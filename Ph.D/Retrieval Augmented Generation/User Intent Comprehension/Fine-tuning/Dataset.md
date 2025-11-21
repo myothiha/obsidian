@@ -12,7 +12,7 @@ We need a dataset with the following format to prepare fine-tune dataset.
 - reasoning language
 - system prompt (or developer)
 - user prompt
-- reasoning step
+- reasoning step - that generated using google search or any other dataset we would like to align our model. 
 - final
 
 Dataset Processing steps
