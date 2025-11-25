@@ -99,7 +99,9 @@ $$
 
 - Sequence to Sequence Model
 - use softmax over all output tokens.
-- inital hidden state: $z_0$ is initialized by sampling from truncated t
+	- $\mathrm{Loss}(\hat{y}, y)= \frac{1}{l'} \sum_{i=1}^{l'} \log p(y_i)$
+- Inital hidden state: $z_0$ is initialized by sampling from truncated normal distribution with standard deviation 1 and truncation of 2. 
+- Both L-Module and H-Module are implement using encoder-only transformer blocks with identical architectures and dimensions.
 
 # Confusions
 ## For each cycle, how $z_H$ is updated? 
