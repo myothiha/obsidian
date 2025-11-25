@@ -44,11 +44,12 @@ Concepts
 
 
 
+# Adaptive Halting Strategy or Adaptive Computation Time (ACT)
 
 
 
 
-
-
+Loss Function
+- Loss for suerpvision segment and Q-Head loss (BinaryCrossEntropy)
 # Confusions
 ## For each cycle, how $z_H$ is updated? 
