@@ -19,8 +19,14 @@ Concepts
 - Hidden state $z_H$ represent the goal for the current cycle. 
 - $f_L$ will converge toward that goal. 
 - After a cycle, $z_H$ will be updated and $f_L$ will have a new goal to converge.
+- Segment = a sequence of cycle. A segment can have a dyanamic number of cycles via ACT
 - Therefore, H module diverge toward the overall goal (target task.)
 - While, L module diverge sub goals determine by H module.
+
+Units - 
+- T times
+- 1 cycle = T times
+- 1 segment (forward pass) = N cycles
 
 # Training Stability
 - Therefore, H module diverge toward the overall goal (target task.)
@@ -32,8 +38,9 @@ Concepts
 - Memory consumption from storing all hidden states from forward pass and combining them with the gradients for the back propagation which demands O(T) memory for T timestamps.
 
 ## Gradient Approximation
-- But if a recurrent neural network converges to a fixed point, we can apply back propagation to that equilibrium point rarely happen). Note: local fix point means, hidden states of L-module remain the same after that point within that cycle. 
-- One step approximation - use the gradient of the last state of each module and treat other states as constant. Therefore, gradients path (back propagation) is Output -> head -> final state of H-module -> final state of the L-Module -> input embedding.
+- But if a recurrent neural network converges to a fixed point, we can apply back propagation to that equilibrium point (though rarely happen). Note: local fix point means, hidden states of L-module remain the same after that point within that cycle. 
+
+- One step approximation - use the gradient of the last state of each module and treat other states as constant. Therefore, gradients path (back propagation) is Output. head -> final state of H-module -> final state of the L-Module -> input embedding.
 - That method only require O(1) memory.
 
 ![[Screenshot 2025-11-24 at 5.03.15 PM.png]]
@@ -41,7 +48,8 @@ Concepts
 ## Deep Supervision
 
 
-
+- During training, the model is run for several "segments." 
+- At the end of each segment, $z_m$ represent both  
 
 
 # Adaptive Halting Strategy or Adaptive Computation Time (ACT)
