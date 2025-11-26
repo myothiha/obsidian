@@ -31,4 +31,14 @@ Symbols used
 - Not for generation task or creative tasks.
 	- It only generate deterministic answers. 
 	- Therefore, right now only suitable for classification like tasks. 
+
+
+Research Direction
+- We can try it on classification tasks without using LLM. it can be a more effective classifier than LLM-based one.
+- Make it work for text generation.
+- We can compress LLM size using that architecture without losing the efficiency. 
+- Integration into Multi-modal reasoning (for example image and text.)
+
+Business application
+- Intent Classification for E-commerce: query -> product classification. 
 - 
