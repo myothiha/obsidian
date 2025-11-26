@@ -19,7 +19,7 @@ $$
 Process
 1. Input -> Embeddings
 2. Run $f_L$, T times over the inputs. T = 1 cycles
-3. Run $f_H$, once per cycle for H cycles. One Forward pass = TN times
+3. Run $f_H$, once per cycle for N cycles. One Forward pass = TN times
 4. $f_O$ map the hidden state of $f_H$ into the output.
 
 Concepts
