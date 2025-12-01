@@ -14,6 +14,7 @@ Is there any improvement required?
 	- Extensible to all channels: web, mobile, and social apps (messenger, whatsapp etc.)
 - Product Embeddings
 	- https://datos.live/blog/product-discovery-in-e-commerce-powered-by-vector-embeddings/
+	- https://github.com/marqo-ai/marqo-ecommerce-embeddings
 - Long Tail Query Problem: "I’m looking for a product to hydrate my skin, but it must be cruelty-free and free from harsh chemicals that could affect my health."
 
 # Predict Accidents
@@ -42,4 +43,11 @@ Analysis
 - We want to lowered the False Positives. 
 - If we try to catch more accidents, how fast does precision degrade (more false alarm)?
 - Feature Engineering
+	- cause of accidence
+	- Personality of the worker
+	- History of the Agency
+	- Type of Industry
 	- Actions taken for each accident case and find efficient way to reduce accidents.
+
+Questions
+- Is the dataset fixed? or still possible to get some unstructure data?
