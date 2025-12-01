@@ -28,3 +28,18 @@ Is there any improvement required?
 	- type of activities
 	- number of working hours
 	- number of people working together
+
+Analysis
+- Precision - 3 %
+	- Many False Alarms.
+	- Among the predicted accident, only 3% is the actual accident.
+- Specificity (TNR) - 77.5%
+	- High = Low false alarms compared to the number of non-accidents. 
+- False Positive Rate = 22.5%
+	- Low = Low false alarms compared to the number of non-accidents. 
+- Recall (TPR) - 71%
+	- High = Can detect majority of accidents
+- We want to lowered the False Positives. 
+- If we try to catch more accidents, how fast does precision degrade (more false alarm)?
+- Feature Engineering
+	- Actions taken for each accident case and find efficient way to reduce accidents.
