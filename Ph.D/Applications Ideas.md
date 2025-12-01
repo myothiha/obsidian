@@ -10,7 +10,11 @@ Is there any improvement required?
 
 # E-commerce
 
-- LLM based sales agent. 
+- Automated sales agent with LLM.
+	- Extensible to all channels: web, mobile, and social apps (messenger, whatsapp etc.)
+- Product Embeddings
+	- https://datos.live/blog/product-discovery-in-e-commerce-powered-by-vector-embeddings/
+- Long Tail Query Problem: "I’m looking for a product to hydrate my skin, but it must be cruelty-free and free from harsh chemicals that could affect my health."
 
 # Predict Accidents
 
