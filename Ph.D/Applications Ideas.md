@@ -58,4 +58,5 @@ Is there any improvement required?
 	- Actions taken for each accident case and find efficient way to reduce accidents.
 
 Questions
-- Is the dataset fixed? or still possible to get some unstructure data?
+- Is the dataset fixed? or still possible to get some unstructured data?
+- 
