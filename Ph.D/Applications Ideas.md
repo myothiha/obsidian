@@ -7,6 +7,10 @@ Is there any improvement required?
 - Use case: Consolidate project level information.
 	- Retrieve info or verify facts against from Table (csv, excel, SQL)
 	- Retrieve info from meeting notes, audio files, or video presentations and integrate into knowledge bases.
+- Generative tasks. For examples,
+	- Creating marketing strategies.
+	- Generating a promotion videos for clients or training video for the employees
+	- Provide creative ideas and plans combine with external knowledge and internal knowledge.
 
 # E-commerce
 
@@ -15,7 +19,11 @@ Is there any improvement required?
 - Product Embeddings
 	- https://datos.live/blog/product-discovery-in-e-commerce-powered-by-vector-embeddings/
 	- https://github.com/marqo-ai/marqo-ecommerce-embeddings
-- Long Tail Query Problem: "I’m looking for a product to hydrate my skin, but it must be cruelty-free and free from harsh chemicals that could affect my health."
+- Long Tail Query Problem: 
+	- "I’m looking for a product to hydrate my skin, but it must be cruelty-free and free from harsh chemicals that could affect my health."
+	- "I want to buy a laptop with long battery life and powerful enough to run LLMs. Show me the cheapest one that can do that."
+- Recommendation system
+	- Association Rules (simple one)
 
 # Predict Accidents
 
@@ -27,10 +35,10 @@ Is there any improvement required?
 	- Physical fitness
 - From Client side
 	- type of activities
-	- number of working hours
+	- number of working hours (extra hours and consecutive)
 	- number of people working together
 
-Analysis
+**Analysis**
 - Precision - 3 %
 	- Many False Alarms.
 	- Among the predicted accident, only 3% is the actual accident.
