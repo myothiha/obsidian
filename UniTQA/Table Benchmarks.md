@@ -1,11 +1,11 @@
 
-Current Comparison
+# Current Comparison
 
 | Model Name                          | Test Accuracy | Dataset   | Testset | Ref               |
 | ----------------------------------- | ------------- | --------- | ------- | ----------------- |
-| TabDDR (ChatGPT4)                   | 76.96 %       | WikiTQ    | 4,344   | [[@TabDDR]], 2025 |
+| **TabDDR** (ChatGPT4)               | 76.96 %       | WikiTQ    | 4,344   | [[@TabDDR]], 2025 |
 | UniTab (gpt-oss-20b)                | 67.98 %       | WikiTQ    | 4,344   |                   |
-| TabDDR (ChatGPT4)                   | 93.29 %       | TabFact   | 1,998   | [[@TabDDR]]       |
+| **TabDDR** (ChatGPT4)               | 93.29 %       | TabFact   | 1,998   | [[@TabDDR]]       |
 | UniTab (gpt-oss-20b)                | 88.88 %       | TabFact   | 1,998   |                   |
 | Table Reasoner (Mistral Large 123B) | 90.61 / 90.04 | Databench | 522     | Table Reasoner    |
 | UniTab (gpt-oss-20b)                | 87.16 / 86.21 | Databench | 522     |                   |
