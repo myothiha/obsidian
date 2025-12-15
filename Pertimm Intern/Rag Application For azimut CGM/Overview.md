@@ -63,3 +63,72 @@ Great to have
 - Data files: three sources.
 - Technical documents for data and alerts. 
 
+# Laurent's Notes
+
+## Sources
+- raw data : CSV inside S3-compatible OVH Storage
+- DSF Declaration Systematique de Fréquentation : GZIP manually sent by Bertrand
+- mapping between MEDIA ID and MEDIA NAME + manifests for all MEDIA ID : extract from databases manually sent by Bertrand : Dump
+
+## Privacy of DATA
+Data already sanitized, must respect CNIL rules
+
+## Measurement tools : 5 actives, less than a thousand websites
+
+## Measure files
+
+```
+YYYYMMDD_<measure-tool-ID>_<perimeter-ID>.json
+```
+
+
+- PV : Page Vues
+- V : visites
+- VQ : visiteurs Quotidien
+- VH : visiteurs Hebdo --> One only, or sometimes one per day, erasing previous ones until ends of week
+- VM : visiteurs Mensuels
+
+A perimeter could be a website, a mobile application, a group of websites (example : "France television")
+
+## Limitation
+
+Be careful about website already contained insite a group of websites, example "France television".
+
+
+Documentation about DSF format sent by Bertrand
+
+## Raw log files
+
+### Desktop/website Raw log file (CSV format, "|" separator file)
+
+#### Format
+- date, timezone Paris, format "2025:12:01:00:00:00"
+- website ID, example "328"
+- IP of visitor, sanitized (last replaced by 0), example "179.245.236.0"
+- domain, example "www.lequipe.fr"
+- Visitor ID
+- Visite ID
+- Full visited URL
+- User-Agent
+- Country Code, before anonymising the IP, or "Anithing bu FRANCE" ("XX")
+#### Frequency
+Daily and weekly figures
+
+### Mobile Application Raw log file (CSV format, "|" separator file)
+#### Format
+- timestamp, timezone Paris, format "2025:12:01:00:00:00"
+- Mobile app ID
+- Visitor or Terminal ID
+- uri page if existing
+- Mobile agent
+- IP of visitor, sanitized (last replaced by 0), example "179.245.236.0"
+- Country Code, before anonymising the IP, or "Anithing bu FRANCE" ("XX")
+#### Frequency
+Daily and weekly and monthly figures
+
+
+
+"Rolling averrage"
+
+
+--> Comportement anormal par rapport à la moyenne (rapidité des visites, anomalie dans le traffic, )
