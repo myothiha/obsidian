@@ -1,4 +1,9 @@
+Colab Document: [https://drive.google.com/drive/folders/1k2jgaXKioNX-TmLGMYiGmFp-LrTubKeN?usp=sharing](https://drive.google.com/drive/folders/1k2jgaXKioNX-TmLGMYiGmFp-LrTubKeN?usp=sharing&authuser=1)
+# Task
 
+- Identify anomalies
+- Create alerts (need technical documents)
+- generate reasoning for traffics
 # Data
 - Json/XML
 	- 1day for one day for each parameters (each param is mobile website or other). for example, 1M visitors for website in December 12th. 
