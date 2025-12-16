@@ -27,8 +27,14 @@
 # Possible Extension (or gap)
 - Fact verification system - check information are correct according to company knowledge.
 	- For example, fast fact checking during communication such as emails, messaging, or presentation slides. AI agent will verify that the information contain in the email is factual according to internal knowledge. 
+- 
 - Creative AI
-	- External Research 
+	- External Research + Internal Service = suggest new service or service improvement. 
+- Organization Specific AI
+	- Data Accumulation mechanism (collect organization specific data.)
+	- Adapt AI agents (fine-tuning) according to the organization related data.
+	- Can utilize smaller Model => Reduce cost
+	- Align AI agents with the organization interest => Improved Performance
 
 Fact Verification
 - Check
