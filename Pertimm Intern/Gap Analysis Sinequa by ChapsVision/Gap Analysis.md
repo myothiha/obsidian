@@ -15,7 +15,6 @@
 		- Extraction: Search in document for this specific documents
 		- Chat: QA over the document
 
-
 ## AI Workplace
 - Add documents to the work space. 
 - Threads: chat with AI assistant who use uploaded contents. Scope: updated contents.
@@ -27,7 +26,6 @@
 # Possible Extension (or gap)
 - Fact verification system - check information are correct according to company knowledge.
 	- For example, fast fact checking during communication such as emails, messaging, or presentation slides. AI agent will verify that the information contain in the email is factual according to internal knowledge. 
-- 
 - Creative AI
 	- External Research + Internal Service = suggest new service or service improvement. 
 - Organization Specific AI
