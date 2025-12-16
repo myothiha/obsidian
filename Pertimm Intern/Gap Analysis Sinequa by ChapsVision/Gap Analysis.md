@@ -23,3 +23,12 @@
 	- Predefined
 	- Create by user using existing templates
 - Checklists: **use LLM to answer a list of questions** using a set of reference documents in the workplace such as proposal questionnaires.
+
+# Possible Extension (or gap)
+- Fact verification system - check information are correct according to company knowledge.
+	- For example, fast fact checking during communication such as emails, messaging, or presentation slides. AI agent will verify that the information contain in the email is factual according to internal knowledge. 
+- Creative AI
+	- External Research 
+
+Fact Verification
+- Check
