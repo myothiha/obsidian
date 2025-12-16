@@ -1,6 +1,8 @@
 
 # Their Current Features
-
+- Search
+- Workflow
+- Support Multi-modal
 
 ## Document Search
 - Semantic Search - display a list of documents that match the query.
