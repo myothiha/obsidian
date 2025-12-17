@@ -28,11 +28,16 @@
 	- For example, fast fact checking during communication such as emails, messaging, or presentation slides. AI agent will verify that the information contain in the email is factual according to internal knowledge. 
 - Creative AI
 	- External Research + Internal Service = suggest new service or service improvement. 
-- Organization Specific AI
+- Creation Agent
+	- Agents that can create presentations, documents, reports, graphs or images according to the guideline. Even video and audio if we can find model with satisfactory performance. 
+	- Difference with normal generation? It's gonna be conditional generation where the output will be constrained or format by predefined policies, constrains, preferences and sample documents. 
+- **Organization Specific AI (Mandatory)**
 	- Data Accumulation mechanism (collect organization specific data.)
 	- Adapt AI agents (fine-tuning) according to the organization related data.
 	- Can utilize smaller Model => Reduce cost
 	- Align AI agents with the organization interest => Improved Performance
+- Multi-modal integration
+	- For vision heavy industries, video, audio and image for education. image for automobile or home repairs or even E-commerce.
 
 Fact Verification
 - Check
