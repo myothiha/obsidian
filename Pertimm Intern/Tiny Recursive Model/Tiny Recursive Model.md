@@ -60,3 +60,6 @@ Business application
 
 # Other researches follows
 
+## Think Visually Reason Textually
+
+- 
