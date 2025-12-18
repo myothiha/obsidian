@@ -31,22 +31,23 @@ How do we determine something's not normal and how to explain?
 
 # Anomaly Types
 
+First detect the anomaly shape. Then, investigate the possible underlying reason with evidence. 
 Anomaly Type	Likely Cause Class
 Short sharp spike	External exposure
 Sustained uplift	Structural change
 Repeating spikes	Scheduled behavior
 Night-time spike	Bots / crawlers
 Single-page surge	Link exposure
-### Layer A — Detect abnormal traffic
 
-Purely data-driven:
-
-- Sudden spike / drop
-- Z-score, IQR, EWMA
-- Change point detection
-- STL residuals
-- Prophet / ARIMA residuals
-
-External Knowledge
+## Visual Classification
+- Provide the graph to VLM and determine what kind of anomalies it is. 
+## External Knowledge
 - Public Holiday Calendar
-- 
+
+
+# Data Analysis
+## 1. Investigate what kind of anomalies it is
+
+## 2. Cross checking with other sites. 
+
+## 3. Integrate with external info (optional)
