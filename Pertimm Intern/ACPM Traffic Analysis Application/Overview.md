@@ -18,12 +18,22 @@ Colab Document: [https://drive.google.com/drive/folders/1k2jgaXKioNX-TmLGMYiGmFp
 - After that, measurement tool can use the visual certificates.
 - But the medias that use the certified measurement tool cannot use it. 
 
-Types of Perimeters
-- Fixed website - content accessible only by an "http" type request vis a web browser. 
-- mobile website
-- contents distributed - editorial content produced and branded by the publisher but distributed outside its digital media and/or not on its own domain names.
+# Types of Perimeters
+- **Fixed website (SWF)** - content accessible only by an "http" type request vis a web browser. 
+- **mobile website (SWM)**
+- **contents distributed (CD)** - editorial content produced and branded by the publisher but distributed outside its digital media and/or not on its own domain names.
 
-# Exchange Workflow with Publishers, Measurement tools and ACPM
+# Definitions
+- **Visits:** "The act of consulting one or more pages of one or more websites by a connected device. If no new pages are accessed on this website within a period exceeding 30 minutes, the visit is deemed to have ended".
+- **Visitor / Unique navigator**: "Unique French and foreign navigator, without distinction of place of connection, determined by a deduplicating visitor identifier, deduplicated over the period".
+- **Page views:** "Complete downloading of a page on the connected computer by a visitor identified in the context of a Visit".5
+
+# Visitors
+- Track same visitor for the same perimeters.
+- But cannot track visitors across different perimeters.
+
+
+# Exchange Workflow with Publishers, Measurement tools and ACPM (Important)
 - The publishers declare DSH to ACPM.
 - ACPM manually validate the DSH.
 - ACPM transmits to the measurement tool the information required to label the declared perimeters. 
@@ -35,9 +45,11 @@ Types of Perimeters
 	- **Statistics on the metrics declared, enabling us to identify significant variations in the volume or pattern of use of the perimeters monitored.**
 	- **The presence of abnormal behavior in log files (invalid non-human traffic, anarchic behavior, suspicious origin).**
 - ACPM can ask justifications or corrections if there are suspected anomalies. 
+- Then, the measurement tool may deliver an updated version of the files to ACPM again. 
+- If a publication period is closed (i.e., after publication of the figures by the ACPM). Any file delivery concerning this period will be rejected.
 
-# ACPM Correction
-- 
+# ACPM Automatic Alert Mechanism
+- ACPM will send alert automatically. 
 
 # Our Task
 
