@@ -26,7 +26,7 @@ Colab Document: [https://drive.google.com/drive/folders/1k2jgaXKioNX-TmLGMYiGmFp
 # Definitions
 - **Visits:** "The act of consulting one or more pages of one or more websites by a connected device. If no new pages are accessed on this website within a period exceeding 30 minutes, the visit is deemed to have ended".
 - **Visitor / Unique navigator**: "Unique French and foreign navigator, without distinction of place of connection, determined by a deduplicating visitor identifier, deduplicated over the period".
-- **Page views:** "Complete downloading of a page on the connected computer by a visitor identified in the context of a Visit".5
+- **Page views:** "Complete downloading of a page on the connected computer by a visitor identified in the context of a Visit".
 
 # Visitors
 - Track same visitor for the same perimeters.
