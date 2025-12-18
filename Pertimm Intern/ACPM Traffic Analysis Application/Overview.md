@@ -139,9 +139,12 @@ Daily and weekly and monthly figures
 --> Comportement anormal par rapport à la moyenne (rapidité des visites, anomalie dans le traffic, )
 
 Priority 
+- Assumption: Alert are already implemented by them.
+- Specific alert: 
+	- abnormal traffic.  
 - Main obj: provide explanation for anomalies in traffic data.
 	- Obvious reasons: linked to events from internet
 	- Non-obvious reasons: data analysis
-		- 
+		- using information from data directly.
 - Deliverable: 
 - R clone for AWS bucket
