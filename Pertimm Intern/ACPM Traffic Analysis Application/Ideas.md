@@ -51,3 +51,14 @@ Single-page surge	Link exposure
 ## 2. Cross checking with other sites. 
 
 ## 3. Integrate with external info (optional)
+
+
+## Possible Final Info
+- sudden spike
+- Lasts 40 minutes
+- Occurs at 14:00
+- No trend change
+- Isolated to one site
+- 40% of them are from foreign
+- 60% of them are from France
+- Normally, 80% from France and 20% from foreign
