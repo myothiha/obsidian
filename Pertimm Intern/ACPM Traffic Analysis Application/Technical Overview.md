@@ -1,6 +1,19 @@
 
- Anomalylysis
- - 
+ Anomaly Analysis
+ 
+ - Does previous year have the same trend?
+ - Does similar websites show similar trend?
+ - If yes, it's not really an anomaly and why it is the case.
+ - If no, do Log Analysis for the days that are suspicious. 
+	 - Find out the reason for the anomaly. For example, 
+		 - 80% more traffic outside of France than usual.
+		 - Abnormal traffic during night time.
+		 - Periodic spike for previous week. 
+- For both cases, Find external source to explain the event. For example,
+	- Traffic spike on E-commerce website on December every year => because of Christmas and New year?
+	- A traffic spike in university website in May => because of new applications.
+- If there is no possible explanation, just provide the characteristics of the anomaly.
+	- An unusually traffic with 2000 visitors on website X. Normally, it's only 100 visitors on this website. 80% of 2000 visitors are international traffic. Normally, only 10% of 2000 visitors are international.
 
 # Notes:
 
