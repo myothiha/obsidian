@@ -3,7 +3,7 @@
  
  - Does previous year have the same trend?
  - Does similar websites show similar trend?
- - If yes, it's not really an anomaly and why it is the case.
+ - If yes, it's not really an anomaly and optionally explain why it is the case.
  - If no, do Log Analysis for the days that are suspicious. 
 	 - Find out the reason for the anomaly. For example, 
 		 - 80% more traffic outside of France than usual.
