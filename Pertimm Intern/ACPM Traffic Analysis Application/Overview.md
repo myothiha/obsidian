@@ -32,7 +32,6 @@ Colab Document: [https://drive.google.com/drive/folders/1k2jgaXKioNX-TmLGMYiGmFp
 - Track same visitor for the same perimeters.
 - But cannot track visitors across different perimeters.
 
-
 # Exchange Workflow with Publishers, Measurement tools and ACPM (Important)
 - The publishers declare DSH to ACPM.
 - ACPM manually validate the DSH.
@@ -190,4 +189,5 @@ Daily and weekly and monthly figures
 
 
 --> Comportement anormal par rapport à la moyenne (rapidité des visites, anomalie dans le traffic, )
+
 
