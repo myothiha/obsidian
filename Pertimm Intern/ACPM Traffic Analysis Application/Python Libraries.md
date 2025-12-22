@@ -18,3 +18,7 @@ Libraries we can use
 -  DeepOD - DeepLearning based outlier detection and anomaly detection.
 	- support both tabular and time-series data.
 - skchange - a newer library designed for **fast change point + segment anomaly detection**, compatible with sktime and described as “experimental but maturing.” This is a good “latest” pick if your anomalies are often _shifts/regime changes_ rather than isolated points.
+
+
+Data request
+- 3-4 years of DSF data.
