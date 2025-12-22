@@ -22,3 +22,7 @@ Libraries we can use
 
 Data request
 - 3-4 years of DSF data.
+
+- How they usually do it?
+- Annotated data for anomaly event
+- 
