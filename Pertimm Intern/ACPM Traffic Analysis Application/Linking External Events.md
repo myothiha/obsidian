@@ -17,7 +17,7 @@
 - MediaCloud
 
 Use them to retrieve:
-- News volume around anomaly date
+- News volume around anomaly date (regional and global)
 - Keywords related to website domain
 - just retrieving headline + timestamps are enough
 
