@@ -30,3 +30,25 @@ This is especially strong for:
 - Universities
 - Public Services
 
+# Website Categories
+- **Actualités / Informations** → News / Information
+- **Annonces** → Announcements
+- **Services** → Services
+- **Services aux professionnels** → Professional Services
+- **Portail / Communautaire** → Portal / Community
+- **Locales (Radio)** → Local (Radio)
+- **Musicales (Radio)** → Music (Radio)
+- **Thématiques (Radio)** → Thematic / Topic-based (Radio)
+- **Généralistes (Radio)** → Generalist (Radio)
+- **Annuaire et guide** → Directory and Guide
+- **Presse Associative et Syndicale** → Association and Trade Union Press
+- **Presse d'annonces** → Classified Ads Press
+- **Presse du 7ième jour** → Sunday Press
+- **Presse Etrangère** → Foreign Press
+- **Presse Hebdomadaire Régionale** → Regional Weekly Press
+- **Presse Magazine** → Magazine Press
+- **Presse Périodique Gratuite d'Information** → Free Periodical News Press
+- **Presse Quotidienne Gratuite d'Information** → Free Daily News Press
+- **Presse Quotidienne Nationale** → National Daily Press
+- **Presse Quotidienne Régionale et Départementale** → Regional and Departmental Daily Press
+- **Sans famille** → Uncategorized / No category
