@@ -187,7 +187,8 @@ Daily and weekly and monthly figures
 
 "Rolling averrage"
 
-
 --> Comportement anormal par rapport à la moyenne (rapidité des visites, anomalie dans le traffic, )
 
+
+## New Info (Audit)
 
