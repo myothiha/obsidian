@@ -33,7 +33,7 @@ Recent advances in AI—including generative approaches—have resulted in techn
 	2. Extension - generalization through the application or extension of the schema to various situations. It relates to online, multi-task, few-shot, or continual learning schemes in statistical and instance based AI methods
 	3. Analogy - generalization involving the transformation/adaptation of the schema to fit a new context. It relates to transfer learning in statistical AI and reasoning by analogy in analytical AI.
 2. Generalization as a product
-	1. 
+3. Generalization as an operator - The purpose of generalisation (as a process) that produces a generalisation (as a product) is to apply the generalisation (as an operator ) to new data.
 
 # Type of AI Models
 1. Analytical AI - logic-based, symbolic, rule-driven reasoning
