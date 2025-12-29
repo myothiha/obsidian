@@ -159,7 +159,6 @@ A perimeter could be a website, a mobile application, a group of websites (examp
 
 Be careful about website already contained insite a group of websites, example "France television".
 
-
 Documentation about DSF format sent by Bertrand
 
 ## Raw log files
