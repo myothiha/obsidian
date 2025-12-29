@@ -39,5 +39,5 @@
 - Multi-modal integration
 	- For vision heavy industries, video, audio and image for education. image for automobile or home repairs or even E-commerce.
 
-Fact Verification
+**Fact Verification**
 - Check
