@@ -2,4 +2,5 @@
 OS: Ubuntu 24.04 LTS
 vCPU: 8 CPUs
 RAM: 32 GB
-Storage: 480 GB SSD
+Storage: 250 GB SSD
+
