@@ -13,6 +13,7 @@ Next Week
 	- Input:
 	- ![[Screenshot 2025-12-31 at 3.36.56 PM.png]]
 - Training - 
+	- Train yearly
 - Inference - 
 	- bridge the gap with the prediction. 
-- 
+- Assumption: expect daily data coming into the platform. 
