@@ -1,4 +1,9 @@
 
+Example
+- PerimeterId = 34-1
+- Family (Category) = (Actualités / Informations) (Translate: News / Information)
+- Brand (218) - (Infirmiers Numérique) (Translate: Nurse in Digital Healthcare)
+
 ## Public Calendar based event
 - Public holidays (region specific)
 - Academic calendars
