@@ -13,7 +13,7 @@ Symbols used
 - Only one Forward pass for Q-head, compute only for Q_halt eliminating second forward pass.
 - There are two recursions: latent recursion and deep recursion.
 - Latent Recursive process (No Gradient updates.)
-	- Given x, current y and current z, the model recursively improve z.
+	- Given x, current y and current z, the model recursively improve z. (run n times)
 	- Given current z and previous y, the model propose a new solution y (or stay at current solution if it's already good.)
 	- Input: x, y, z, n
 	- Output:final value of y, z

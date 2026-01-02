@@ -10,7 +10,7 @@ Example
 
 ## APIs
 - Nager.Date (public holiday API)
-- Custom internal calendar by website category (university calendar, or others. )
+- Custom internal calendar by website category (university calendar, or others.)
 
 ## datasets
 - Create a list of date using spikes
