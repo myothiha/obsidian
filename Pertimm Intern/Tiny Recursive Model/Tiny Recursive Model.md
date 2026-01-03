@@ -45,7 +45,7 @@ Symbols used
 	 - Only work in In-Domain Distribution.
 - Not for generation task or creative tasks.
 	- It only generate deterministic answers. 
-	- Therefore, right now only suitable for classification like tasks. 
+	- Therefore, right now only suitable for classification like tasks.
 
 
 Research Direction
