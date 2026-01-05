@@ -9,6 +9,7 @@
 | UniTab (gpt-oss-20b)                    | 88.88 %       | TabFact   | 1,998   |                   |
 | **Table Reasoner (Mistral Large 123B)** | 90.61 / 90.04 | Databench | 522     | Table Reasoner    |
 | UniTab (gpt-oss-20b)                    | 87.16 / 86.21 | Databench | 522     |                   |
+|                                         |               |           |         |                   |
 ## WikiTQ: https://github.com/ppasupat/WikiTableQuestions
 
 Testset: pristine-unseen-tables: 4,344
