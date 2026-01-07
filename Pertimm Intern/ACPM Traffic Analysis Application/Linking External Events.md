@@ -14,7 +14,7 @@ Example
 
 ## datasets
 - Create a list of date using spikes
-- create possible events using the API we have.
+- retrieve possible events using the API we have.
 
 ## News and Public Attention
 - Google News API / GELT
@@ -34,6 +34,10 @@ This is especially strong for:
 - E-commerce
 - Universities
 - Public Services
+
+# LLM-Based General Event-Finder
+1. Ask to retrieve a list of events
+2. Just ask for possible scenario after providing the input.
 
 # Website Categories
 - **Actualités / Informations** → News / Information
