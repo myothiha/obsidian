@@ -1,4 +1,3 @@
-
 # Current Comparison
 
 | Model Name                              | Test Accuracy | Dataset   | Testset | Ref               |
