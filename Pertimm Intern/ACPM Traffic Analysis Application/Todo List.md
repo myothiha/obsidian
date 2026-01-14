@@ -24,4 +24,3 @@ Questions
 - Data Privacy
 	- Is there document describing which info must not leak.
 	- or Need Confirmation for each prompt? from who?
-- 
