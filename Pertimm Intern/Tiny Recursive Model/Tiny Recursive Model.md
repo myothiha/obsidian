@@ -57,7 +57,6 @@ Research Direction
 Business application
 - Intent Classification for E-commerce: query -> product classification. 
 
-
 # Other researches follows
 
 ## Think Visually Reason Textually
