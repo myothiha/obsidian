@@ -7,7 +7,6 @@ Next Week
 Next Week
 - Install MySQL
 - Create a setup 
-
 - Group consecutive anomalies. 
 - Wanna do API based platform.
 	- Input:
@@ -17,3 +16,12 @@ Next Week
 - Inference - 
 	- bridge the gap with the prediction. 
 - Assumption: expect daily data coming into the platform. 
+- Host one model per Perimeter
+
+Questions
+- How to use the platform (API or Web UI)
+- Get the past log files (prev years)
+- Data Privacy
+	- Is there document describing which info must not leak.
+	- or Need Confirmation for each prompt? from who?
+- 
