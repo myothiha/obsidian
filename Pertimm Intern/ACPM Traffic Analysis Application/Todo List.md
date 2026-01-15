@@ -18,9 +18,13 @@ Next Week
 - Assumption: expect daily data coming into the platform. 
 - Host one model per Perimeter
 
-Questions
+External Questions
 - How to use the platform (API or Web UI)
 - Get the past log files (prev years)
 - Data Privacy
 	- Is there document describing which info must not leak.
 	- or Need Confirmation for each prompt? from who?
+
+Questions for Laurent
+- Laurent will contact client for the updates right?
+- 
