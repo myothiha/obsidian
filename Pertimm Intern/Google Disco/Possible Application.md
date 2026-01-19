@@ -24,6 +24,29 @@ Contribution Factors for AI success
 - embedding AI into business processes
 - tracking KPIs for AI solutions 
 
+# What can we do?
+- Improve efficiency (workflow automation)
+- AI Power Innovation
+- Simulation
+	- Simulate business process using existing data.
+	- Try decisions or pilot solutions on simulated environment first.
+
+
+# AI Power Innovation
+
+Increase velocity, volume and variety of Innovation process
+- Identify problems
+- Create solutions
+	- Train foundational models to produce solutions such as
+		- chemical compounds
+		- drug candidates
+		- computer code
+		- electrical designs
+		- physical designs
+		- new products or services
+		- any other type of solutions application to any domain
+- Evaluate and Identify the most promising solutions
+	- Pilot and verified the solutions in simulated environment and/or actual environment
 # AI Risks
 - Inaccuracy and Hallucination (Most org trying to mitigate)
 - Explainability (gap: few are trying to solve it.)
