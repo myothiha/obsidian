@@ -34,10 +34,17 @@ Train foundational models to produce solutions such as
 - new products or services
 - any other type of solutions application to any domain
 
-Ideas Exploration
-- Synthesize insights from published research articles and databases. 
+For consumer goods,
+- generate candidate recipes for food and beverage
+- candidate formulation for cosmetics
+- candidate designs for household or electronic products.
+- Currently it's limited in research in this area but it will increased. 
+
+#### Ideas Exploration
 - Knowledge base
 	- Codify tacit knowledge (from the mind of employee) through transcribing and capturing recorded meetings.
+	- Published research articles and databases
+- Synthesize insights from the knowledge base
 
 Knowledge base for idea exploration
 
@@ -52,3 +59,9 @@ Use data to train AI to act as a simulator. Use data with AI to map, all possibl
 - Scientific experiments
 	- AI based Weather forecasting (https://www.nature.com/articles/s41586-024-08252-9)
 
+
+# Which domain will gain most benefits?
+- Pharmaceuticals
+- Semiconductors
+- Software
+- Industries with highest R&D intensity
