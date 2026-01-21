@@ -1,6 +1,7 @@
 Ref:
 https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/banking-on-gen-ai-in-the-credit-business-the-route-to-value-creation
-
+https://www.mckinsey.com/industries/financial-services/our-insights/banking-matters/banking-trends-snapshot-how-banks-can-catch-up-to-fintechs-on-ai
+https://www.mckinsey.com/industries/financial-services/our-insights/extracting-value-from-ai-in-banking-rewiring-the-enterprise
 
 # Survey Result
 
