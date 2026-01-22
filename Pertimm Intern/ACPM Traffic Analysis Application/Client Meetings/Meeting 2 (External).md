@@ -1,7 +1,7 @@
 ## Updates (Completed)
 - LSTM Anomaly Detection
 - Public Calendar Event Integration
-- Viable Local LLM Integration
+- Local LLM Integration
 - Integrate MySQL DB with Prototype.
 - Experiment with LLM to find explanation online to explain anomaly.
 
@@ -25,7 +25,7 @@
 	- Develop model for each perimeter. 
 	- Each model will be single inputs (date) and outputs  (VQ, PV, V, for each perimType (SWF, SWM etc). 
 
-## Updates (Completed)Questions need to confirm with the client
+## Questions need to confirm with the client
 - How to use the platform
 	- [ ] API
 	- [ ] Web UI
