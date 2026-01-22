@@ -26,10 +26,10 @@ Colab Document: [https://drive.google.com/drive/folders/1k2jgaXKioNX-TmLGMYiGmFp
 
 ### Total Perim Types from Data
 1. ANT
-2. CD
+2. CD - Content Distributed
 3. SWF - Fixed website
 4. SWC - 
-5. SWM
+5. SWM - Mobile website
 6. ANM
 
 # Definitions
