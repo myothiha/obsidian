@@ -3,17 +3,17 @@
 - Public Calendar Event Integration
 - Viable Local LLM Integration
 - Integrate MySQL DB with Prototype.
-- Use GPT 4 for Anomaly explanation.
+- Experiment with LLM to find explanation online to explain anomaly.
 
 ## Data Preparation for Detection and Identification (In Progress)
 - Just date time is enough in the case of one model per perimeter.
 - For output:
 - There are 6 perimeter types
 	1. ANT
-	2. CD - Content Distributed
-	3. SWF - Fixed website
-	4. SWC - 
-	5. SWM - Mobile website
+	2. CD
+	3. SWF
+	4. SWC
+	5. SWM
 	6. ANM
 - And three daily metrics for each perimeter type
 	- PV - page views
