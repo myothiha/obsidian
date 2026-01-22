@@ -1,11 +1,11 @@
-Updates (Completed)
+## Updates (Completed)
 - LSTM Anomaly Detection
 - Public Calendar Event Integration
 - Viable Local LLM Integration
 - Integrate MySQL DB with Prototype.
 - Use GPT 4 for Anomaly explanation.
 
-Data Preparation for Detection and Identification (In Progress)
+## Data Preparation for Detection and Identification (In Progress)
 - Just date time is enough in the case of one model per perimeter.
 - For output:
 - There are 6 perimeter types
@@ -25,7 +25,7 @@ Data Preparation for Detection and Identification (In Progress)
 	- Develop model for each perimeter. 
 	- Each model will be single inputs (date) and outputs  (VQ, PV, V, for each perimType (SWF, SWM etc). 
 
-Questions need to confirm with the client
+## Updates (Completed)Questions need to confirm with the client
 - How to use the platform
 	- [ ] API
 	- [ ] Web UI
