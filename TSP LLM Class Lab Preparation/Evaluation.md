@@ -1,3 +1,4 @@
 
-Filtering: How detect repetition
-Content Fidelity
+What is the task?
+How you know it's overfitting?
+

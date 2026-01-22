@@ -89,7 +89,7 @@ Naming convention
 	- PV File - (page view) include stats like
 		- date measured
 - VH - Weekly data (accumulate)
-- For some params are one month (in xml)
+- VM - For some params are one month (in xml)
 - VQ 
 
 
