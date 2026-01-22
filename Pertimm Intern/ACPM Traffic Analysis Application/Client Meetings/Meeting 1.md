@@ -27,8 +27,8 @@ Colab Document: [https://drive.google.com/drive/folders/1k2jgaXKioNX-TmLGMYiGmFp
 ### Total Perim Types from Data
 1. ANT
 2. CD
-3. SWF
-4. SWC
+3. SWF - Fixed website
+4. SWC - 
 5. SWM
 6. ANM
 

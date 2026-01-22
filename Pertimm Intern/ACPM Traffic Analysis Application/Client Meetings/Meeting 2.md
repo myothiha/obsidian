@@ -1,5 +1,8 @@
 External Questions
 - How to use the platform (API or Web UI)
+- Model Development
+	- Develop model for each perim. 
+	- Each model will be multivariate inputs (main: date, covariates) and outputs (VQ, PV, V, for each perimType (SWF, VSF))
 - Get the past log files (prev years)
 - Is there annotated data for DSF files?
 - Data Privacy
