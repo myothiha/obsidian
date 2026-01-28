@@ -24,6 +24,8 @@ Colab Document: [https://drive.google.com/drive/folders/1k2jgaXKioNX-TmLGMYiGmFp
 - **mobile website (SWM)**
 - **contents distributed (CD)** - editorial content produced and branded by the publisher but distributed outside its digital media and/or not on its own domain names.
 
+
+
 ### Total Perim Types from Data
 1. ANT
 2. CD - Content Distributed
@@ -32,10 +34,10 @@ Colab Document: [https://drive.google.com/drive/folders/1k2jgaXKioNX-TmLGMYiGmFp
 5. SWM - Mobile website
 6. ANM
 
-# Definitions
-- **Visits:** "The act of consulting one or more pages of one or more websites by a connected device. If no new pages are accessed on this website within a period exceeding 30 minutes, the visit is deemed to have ended".
-- **Visitor / Unique navigator**: "Unique French and foreign navigator, without distinction of place of connection, determined by a deduplicating visitor identifier, deduplicated over the period".
-- **Page views:** "Complete downloading of a page on the connected computer by a visitor identified in the context of a Visit".
+# DSF Type
+- **Visits (V):** "The act of consulting one or more pages of one or more websites by a connected device. If no new pages are accessed on this website within a period exceeding 30 minutes, the visit is deemed to have ended".
+- **Visitor / Unique navigator (daily visitors = VQ):** "Unique French and foreign navigator, without distinction of place of connection, determined by a deduplicating visitor identifier, deduplicated over the period".
+- **Page views (PV):** "Complete downloading of a page on the connected computer by a visitor identified in the context of a Visit".
 
 # Visitors
 - Track same visitor for the same perimeters.
