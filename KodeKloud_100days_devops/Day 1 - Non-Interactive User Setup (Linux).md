@@ -63,7 +63,6 @@ Create a user named `john` with a non-interactive shell on `App Server 1`.
 `sudo passwd -u john`
 
 - `-u` — **unlock** the password (reverses `-l`).
-    
 
 ---
 
