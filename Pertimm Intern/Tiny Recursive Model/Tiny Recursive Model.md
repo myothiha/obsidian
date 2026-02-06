@@ -11,8 +11,8 @@ Symbols used
 # Dataset
 - Sudoku Extreme: https://huggingface.co/datasets/sapientinc/sudoku-extreme
 - Maze Hard: https://huggingface.co/datasets/sapientinc/maze-30x30-hard-1k
-- ARC-AGI 1: 
-- ARC-AGI 2: 
+- ARC-AGI 1: https://arcprize.org/arc-agi/1/
+- ARC-AGI 2: https://arcprize.org/arc-agi/2/
 # Training
 - Train separately for each task.
 - There's no scale law yet.
