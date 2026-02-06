@@ -7,6 +7,12 @@
 Symbols used
 - n - the number of time that latent reasoning z is recursively updated. 
 - T - the number of full recursive blocks (each time solution y is updated.)
+
+# Dataset
+- Sudoku Extreme: https://huggingface.co/datasets/sapientinc/sudoku-extreme
+- Maze Hard: https://huggingface.co/datasets/sapientinc/maze-30x30-hard-1k
+- ARC-AGI 1: 
+- ARC-AGI 2: 
 # Training
 - Train separately for each task.
 - There's no scale law yet.
