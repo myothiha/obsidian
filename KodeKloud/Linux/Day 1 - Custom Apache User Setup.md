@@ -8,7 +8,6 @@ b. Assign a unique UID `1620` and designate the home directory as `/var/www/r
 
 > Note: You can find the infrastructure details by clicking on the **Details of all Users and Servers** button on the top-right section of the page.
 
-
 # Solution
 
 ## Step 1: Access App Server 3
@@ -57,7 +56,6 @@ id rose
 - **Explanation:** This returns the `uid`, `gid`, and `groups`. You should see `uid=1620(rose)`.
 
 2. **Check Home Directory:**
-
 ```
 ls -ld /var/www/rose
 ```
