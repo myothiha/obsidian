@@ -8,3 +8,4 @@
 - Overreach risk: Impacts and Application are too much of a leap.
 	- Propose scoped validation plan. 
 - Mixed with assumptions and official statements. And benchmarks are not the main concern. 
+
