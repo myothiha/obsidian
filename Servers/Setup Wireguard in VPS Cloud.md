@@ -132,11 +132,8 @@ wg genkey | tee private.key | wg pubkey > public.key
 You must tell your Ubuntu server that this second computer is allowed to connect.
 
 1. Open your server config:
-    
     `sudo nano /etc/wireguard/wg0.conf`
-    
 2. Add a **second** `[Peer]` section at the bottom. **Crucial:** You must give this computer its own unique IP (e.g., `10.0.0.3`).
-    
 
 Ini, TOML
 
