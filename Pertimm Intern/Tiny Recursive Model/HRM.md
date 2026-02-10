@@ -105,6 +105,10 @@ $$
 
 ## Pseudo Code
 
+(Refing HRM pseudo code From TRM Paper which is much more details.)
+![[Screenshot 2026-02-10 at 2.58.55 PM.png]]
+
+From Original HRM Paper:
 ![[Screenshot 2026-02-10 at 2.30.55 PM.png]]
 # Confusions
 ## For each cycle, how $z_H$ is updated? 

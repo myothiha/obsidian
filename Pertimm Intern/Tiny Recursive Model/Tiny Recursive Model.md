@@ -34,7 +34,7 @@ Symbols used
 - Having previous reasoning z and previous solution y, help model to remember previous solution and how it reach that solution (reasoning) and improve both of them.
 - Update z, n times and update y, T times.
 
-# Pseudo Code
+# Pseudo Code (TRM)
 
 ![[Screenshot 2025-11-26 at 2.00.31 PM.png]]
 # Architecture
