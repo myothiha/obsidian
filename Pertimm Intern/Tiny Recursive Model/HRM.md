@@ -103,5 +103,8 @@ $$
 - Inital hidden state: $z_0$ is initialized by sampling from truncated normal distribution with standard deviation 1 and truncation of 2. 
 - Both L-Module and H-Module are implement using encoder-only transformer blocks with identical architectures and dimensions.
 
+## Pseudo Code
+
+![[Screenshot 2026-02-10 at 2.30.55 PM.png]]
 # Confusions
 ## For each cycle, how $z_H$ is updated? 
