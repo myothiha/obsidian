@@ -12,13 +12,13 @@ TRM Based RAG Tool Selector
 ## Concrete Ideas
 
 - Supply Chain & Warehouse "Slotting" Logic
+	- How we can do? :https://www.penskelogistics.com/solutions/warehousing-and-distribution/warehouse-design/maximize-warehouse-space/
 	- Dataset: https://www.kaggle.com/datasets/aikinomichi/mega-star-distribution-centre
 		- Dataset Analysis: https://www.kaggle.com/code/aikinomichi/mega-star-distribution-centre-inventory-analysis
 	- Amazon Dataset: https://github.com/nisarg14/CSE523-Machine-Learning-Gophers
 
 ## Optimization (Traveling Sale Person)
 
-##  
 ### How to Prototype This
 
 To build a "Less is More" style prototype for this Saint-Gobain use case, you would:
