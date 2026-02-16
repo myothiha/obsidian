@@ -5,7 +5,7 @@
 - Use LLM to generate report using the statistics.
 
 ## Todo
-- More exhausted 
+- More exhaustive algorithms
 - Detect ISP
 - Multi days 
 - Flexible IP list (example)
