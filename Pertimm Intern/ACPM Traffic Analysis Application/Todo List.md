@@ -4,17 +4,7 @@ Next Week
 	- yearly data will be required.
 - Anomaly Identification
 
-Next Week
-- Install MySQL
-- Create a setup 
-- Group consecutive anomalies. 
-- Wanna do API based platform.
-	- Input:
-	- ![[Screenshot 2025-12-31 at 3.36.56 PM.png]]
-- Training - 
-	- Train yearly
-- Inference - 
-	- bridge the gap with the prediction. 
-- Assumption: expect daily data coming into the platform. 
-- Host one model per Perimeter
 
+Estimate
+- [ ] Anomaly detection. Just try to detect anomaly for one perimeter and estimate ~685 perimeter (just multiply)
+- [ ] Then, check LLM latency for one anomaly. Compute average log.
