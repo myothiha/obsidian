@@ -2,7 +2,7 @@
 # What is Osint?
 
 
-# Abilities of OSINT
+# Features of World Monitor
 
 World Monitor is an open-source, real-time global intelligence dashboard designed for situational awareness. It aggregates diverse data streams into a unified interface, primarily focused on geopolitical monitoring, cybersecurity, and infrastructure tracking.
 
@@ -34,19 +34,28 @@ Based on the repository documentation, here are the high-level features of the p
 - **Finance Variant:** Focuses on 92 stock exchanges, central bank activities, and global FDI tracking.
 - **Cyber Threat Intelligence:** A dedicated map layer for tracking cyber threats, including data from Feodo Tracker, URLhaus, and AbuseIPDB.
 
-# What business are doing with Osint?
+# Businesses powered by OSINT
+
+OSINT as a World Context powered by AI Agents
 
 Ignoring
 - Government, military use case.
 
 Interested in
-Echo - AI for Public Opinion Analysis [1] (high interest)
 Finance
-Intelligence as a Service
-Cyber Security analysis such as Janus [1] (low interest)
-- Monitoring attacks pattern and prevent. For example, Recorded Future provides **provide a real-time risk score for every IP address, domain, and company on earth.**
+- Company Profiling and Investigation [4]
+- Analysis Market Movement [8]
+- Company Reputation and Brand Management [7], and monitor public opinion on your brand, or products [1]
+Cyber Security analysis such as Janus [2]
+- Monitoring attacks pattern and prevent. For example, **Recorded Future** [3] provides provide a real-time risk score for every IP address, domain, and company on earth.
+Supply Chain Risk Management
+- Monitor natural disasters, trade disputes, trade route disruption, pipeline, weather alerts, cyber attacks, political instability, supplier financial health etc for potential risks [5, 6].
 
-
-
-[1] https://www.osavul.cloud/
-[2] https://www.recordedfuture.com/
+[1] https://www.osavul.cloud/solutions/echo
+[2] https://www.osavul.cloud/solutions/Janus
+[3] https://www.recordedfuture.com/
+[4] https://sociallinks.io/cases/corporate-investigations
+[5] https://www.babelstreet.com/vendor-vetting-for-supply-chain-risk-management
+[6] https://windward.ai/solutions/remote-sensing-intelligence/
+[7] https://mediawatcher.ai/pr-and-reputation-management/
+[8] https://mediawatcher.ai/financial-services/
