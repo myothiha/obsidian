@@ -34,7 +34,7 @@ Evaluate Performance across different tasks.
 - Dataset: All model only trained on **ImageNet-1K**. without other datasets or distillation.
 - Plain Transformer
 	- Compare with DeiT3.
-	- Use **class token** instead of [[GAP]] (Global Average Pooling)
+	- Use **class token** instead of [[Transformers/Attention_Pooling/GAP]] (Global Average Pooling)
 - Pyramid Vision Transformer
 	- use same architecture as [[Twins-SVT]]
 	- same hyper parameters setting.

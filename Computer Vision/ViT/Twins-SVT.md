@@ -3,7 +3,7 @@
 # Architecture
 
 Components
-- Use Global Average Pooling [[GAP]]
+- Use Global Average Pooling [[Transformers/Attention_Pooling/GAP]]
 
 ![[Screenshot 2025-03-09 at 1.57.05 PM.png]]
 
