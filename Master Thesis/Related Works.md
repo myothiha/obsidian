@@ -11,10 +11,11 @@ Reference: [[@ilievskiAligningGeneralisationHumans2025]]
 
 
 
-| Benchmark |                                                                                |
-| --------- | ------------------------------------------------------------------------------ |
-| MMMU      | Evaluate expert-level knowledge and reasoning rooted in deep subject knowledge |
-|           |                                                                                |
+| Benchmark |                                                                                                                                                                                                                                                                                                                               |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| MMMU      | Evaluate expert-level knowledge and reasoning rooted in deep subject knowledge                                                                                                                                                                                                                                                |
+| MMMU Pro  | Upgrade MMMU by <br>1. filtering out questions that can be answer by text only LLM, <br>2. augmenting candidate options (to reduce guessing)<br>3. vision-only setting where questions are embedded within the image - Force LLM to really see and read the visual. to avoid heavily relying on text to answer the questions. |
+|           |                                                                                                                                                                                                                                                                                                                               |
 
 
 
