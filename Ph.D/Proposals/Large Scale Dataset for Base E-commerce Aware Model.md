@@ -39,4 +39,5 @@ We need a comprehensive dataset to build world context for E-commerce domain. I 
 
 ## Simulator
 
-Is it possible to create a simulator which can create different indiv
+Hypothesis: create a simulator which can create different consumers which can simulate real consumers using our large scale data. 
+Objective: Simulate consumers by defining different parameters: professions, what he already have. For example, create a consumer who is a student studying AI in France, born in 
